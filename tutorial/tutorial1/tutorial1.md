@@ -6,7 +6,7 @@ paginate: true
 ---
 
 # Linear Algebra Tutorial 1
-2023.10.？
+2023.10.??
 
 ---
 
