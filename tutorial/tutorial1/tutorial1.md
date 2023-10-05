@@ -65,17 +65,45 @@ feel free to contact TAs
 
 ---
 
+# Linear equation(s)
+![linear system](./img/linear_system.png)
+
+---
+# coeffcient matrix & augmented matrix
+![](./img/coeffcient_matrix.png) ![](./img/augmented_matrix.png)
+
+
+- specific: $\vec{b} = \vec{0}$:
+called **homogeneous linear system**
+  1. at least a **trivial solution**
+  2. may have non-trivial solutions(linear independence) 
+
+---
+
+# some possible solutions
+1. no solution
+2. fixed solution
+3. infinite solutions
+
+- specific
+  trivial solution: $\vec{x} = \vec{0}$
 
 
 
 
 
+---
+general solution
+specific solution + trivial solution
 
+Ax=b
+通解可由一个特解加上齐次方程的通解得到
 
-
-
-
-
+---
+# elementary row operations
+- interchange two rows
+- multiply a row by a nonzero constant
+- add a multiple of one row to another row
 
 
 
