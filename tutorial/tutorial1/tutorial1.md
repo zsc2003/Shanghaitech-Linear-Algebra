@@ -2,8 +2,8 @@
 marp: true
 math: mathjax
 paginate: true
-
 ---
+
 
 # Linear Algebra Tutorial 1
 2023.10.??
@@ -105,7 +105,17 @@ Ax=b
 - multiply a row by a nonzero constant
 - add a multiple of one row to another row
 
+---
 
+![h:15cm](./img/example.png)
+
+
+---
+
+![h:15cm](./img/example.png)
+
+> TFFTTF
+---
 
 
 
