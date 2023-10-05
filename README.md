@@ -1,2 +1,2 @@
 # Linear-Algebra
-Linear Algebra 2023, Fall
+ShanghaiTech Linear Algebra, Fall 2023.
