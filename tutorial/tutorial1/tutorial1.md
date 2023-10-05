@@ -25,7 +25,7 @@ paginate: true
 1. hand out homework
   grade distribution:
   平时成绩 30%； 期中考试30%；期末考试 40%
-2. some discussion
+2. some discussion(please post your questions before the tutorial)
 3. why in English?
 
 ---
