@@ -78,7 +78,6 @@ feel free to contact TAs
 
 - also an $m\times 1$ matrix 
 
-
 ---
 # coeffcient matrix & augmented matrix
 ![](./img/coeffcient_matrix.png) ![](./img/augmented_matrix.png)
@@ -96,6 +95,36 @@ called **homogeneous linear system**
 - multiply a row by a nonzero constant
 - add a multiple of one row to another row
 - interchange two rows
+
+---
+
+# row echelon form & reduced row echelon form
+
+1. 该矩阵中任何不为0的行里所包含的第一个非零的项都是1。我们称这样的项
+为主主主1 (leading 1);
+2. 该矩阵中任何为0的行一定在不为0的行的下方;
+3. 对于该矩阵中任意两个相相相邻邻邻且不不不为为为0的行，上上上面面面的行里所包含的主主主1一定位
+于下下下面面面的行里所包含的主1的左左左侧侧侧;
+那么该矩阵被称为阶阶阶梯梯梯型型型(row echelon form)。若一个阶阶阶梯梯梯型型型额外满足以下条件
+
+该矩阵中任何不为0的行里所包含的主主主1是其所在的列列列里唯一一个不为0的
+项，
+那么该矩阵被称为简化阶梯型
+(reduced row echelon form)
+
+---
+
+![h:18cm](./img/echelon.jpg)
+
+---
+
+![h:18cm](./img/echelon_sol.png)
+
+---
+
+我们将把一个线性方程组对应的增广矩阵通过一系列初等行变换转化为阶梯
+型的过程称之为高斯消元法 (Gauss elimination)，把一个线性方程组对应的增广
+矩阵通过一系列初等行变换转化为简化阶梯型
 
 ---
 若m = n, 即方程个数与未知数个数相等，且通过对增广矩阵B = (A, b)进行
@@ -147,42 +176,7 @@ Ax=b
 通解可由一个特解加上齐次方程的通解得到
 
 ---
-# elementary row operations
-- interchange two rows
-- multiply a row by a nonzero constant
-- add a multiple of one row to another row
 
----
-
-# row echelon form & reduced row echelon form
-
-1. 该矩阵中任何不为0的行里所包含的第一个非零的项都是1。我们称这样的项
-为主主主1 (leading 1);
-2. 该矩阵中任何为0的行一定在不为0的行的下方;
-3. 对于该矩阵中任意两个相相相邻邻邻且不不不为为为0的行，上上上面面面的行里所包含的主主主1一定位
-于下下下面面面的行里所包含的主1的左左左侧侧侧;
-那么该矩阵被称为阶阶阶梯梯梯型型型(row echelon form)。若一个阶阶阶梯梯梯型型型额外满足以下条件
-
-该矩阵中任何不为0的行里所包含的主主主1是其所在的列列列里唯一一个不为0的
-项，
-那么该矩阵被称为简化阶梯型
-(reduced row echelon form)
-
----
-
-
-我们将把一个线性方程组对应的增广矩阵通过一系列初等行变换转化为阶梯
-型的过程称之为高斯消元法 (Gauss elimination)，把一个线性方程组对应的增广
-矩阵通过一系列初等行变换转化为简化阶梯型
-
----
-
-![h:18cm](./img/echelon.jpg)
-
-
----
-
-![h:18cm](./img/echelon_sol.png)
 
 ---
 
@@ -217,9 +211,6 @@ x1 = 7 − 3r − 2s, x2 = s, x3 = 1, x4 = r, x5 = 2; r, s 为任意常数
 ![](./img/example.png)
 
 > TFFTTF
----
-
-
 
 ---
 
@@ -227,5 +218,3 @@ x1 = 7 − 3r − 2s, x2 = s, x3 = 1, x4 = r, x5 = 2; r, s 为任意常数
 
 - 3B1B Essence of Linear Algebra
   直接在B站搜 3b1b线性代数的本质 即可
-
----
