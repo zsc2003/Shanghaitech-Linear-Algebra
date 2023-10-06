@@ -76,7 +76,7 @@ feel free to contact TAs
 
 ![](./img/vector.png)
 
-- also a matrix $m\times 1$
+- also an $m\times 1$ matrix 
 
 
 ---
@@ -153,17 +153,20 @@ Ax=b
 - add a multiple of one row to another row
 
 ---
-(阶梯型与简化阶梯型
+
+# row echelon form & reduced row echelon form
+
 1. 该矩阵中任何不为0的行里所包含的第一个非零的项都是1。我们称这样的项
 为主主主1 (leading 1);
 2. 该矩阵中任何为0的行一定在不为0的行的下方;
 3. 对于该矩阵中任意两个相相相邻邻邻且不不不为为为0的行，上上上面面面的行里所包含的主主主1一定位
 于下下下面面面的行里所包含的主1的左左左侧侧侧;
-那么该矩阵被称为阶阶阶梯梯梯型型型。若一个阶阶阶梯梯梯型型型额外满足以下条件
+那么该矩阵被称为阶阶阶梯梯梯型型型(row echelon form)。若一个阶阶阶梯梯梯型型型额外满足以下条件
 
-该矩阵中任何不为0的行里所包含的主主主1是其所在的列列列里唯唯唯一一一一一一个个个不不不为为为0的
+该矩阵中任何不为0的行里所包含的主主主1是其所在的列列列里唯一一个不为0的
 项，
-那么该矩阵被称为简简简化化化阶阶阶梯梯梯型型型
+那么该矩阵被称为简化阶梯型
+(reduced row echelon form)
 
 ---
 
@@ -174,7 +177,12 @@ Ax=b
 
 ---
 
-![](./img/echelon.png)
+![h:18cm](./img/echelon.jpg)
+
+
+---
+
+![h:18cm](./img/echelon_sol.png)
 
 ---
 
