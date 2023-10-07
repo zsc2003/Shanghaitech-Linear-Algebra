@@ -6,7 +6,7 @@ paginate: true
 
 
 # Linear Algebra Tutorial 1
-2023.10.??
+2023.10.10
 
 ---
 
@@ -16,17 +16,22 @@ paginate: true
 - 2021 cs undergraduate
 - qq: 1354038619
 - email: zhoushch@shanghaitech.edu.cn
+
 ---
 
 # About the tutorial
-- time: Every :00
-- place: SIST 1-??? 
+- time: Every Tuesday 19:00(may be changed?)
+- place: SIST 1A-106
 
 1. hand out homework
   grade distribution:
   平时成绩 30%； 期中考试30%；期末考试 40%
 2. some discussion(please post your questions before the tutorial)
 3. why in English?
+
+---
+
+![h:20cm](./img/qq_group.jpg)
 
 ---
 
@@ -48,6 +53,21 @@ feel free to contact TAs
 - It is a fundamental mathematical subject with applications in many fields.
 - It is a prerequisite for many other courses.
 - ...
+
+---
+
+# for everyone
+- mathmatic anylisis
+- probability and statistics
+- ...
+
+---
+
+# for cs students
+
+![](./img/iml.png)
+
+from _**Introduction to Machine Learning**_'s tutorial1
 
 ---
 
@@ -118,7 +138,9 @@ called **homogeneous linear system**
 ---
 
 我们将把一个线性方程组对应的增广矩阵通过一系列初等行变换转化为阶梯
-型的过程称之为高斯消元法 (Gauss elimination)，把一个线性方程组对应的增广
+型的过程称之为高斯消元法 
+# Gauss elimination
+，把一个线性方程组对应的增广
 矩阵通过一系列初等行变换转化为简化阶梯型
 
 ---
