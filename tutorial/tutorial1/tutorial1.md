@@ -228,6 +228,44 @@ x1 = 7 − 3r − 2s, x2 = s, x3 = 1, x4 = r, x5 = 2; r, s 为任意常数
 
 ---
 
+若一个齐次线性
+方程组有一个非平凡解，那么它必然有无穷多个非平凡解
+
+---
+
+# Matrices
+
+- square matrix
+  diagonal
+- diagonal matrix
+- upper(lower) triangular matrix
+- identity matrix
+- zero matrix
+- symmetric matrix
+- skew-symmetric matrix
+- orthogonal matrix
+- .............
+---
+
+# Matrices
+
+- row vector
+- column vector
+
+> A matrix can be view as a set of vectors(row/column)
+
+---
+
+# Matrix Operations
+
+- equality
+- addition(subtraction)
+- scalar multiplication
+- matrix multiplication
+- division?
+
+---
+
 # Some useful resources
 
 - 3B1B Essence of Linear Algebra
