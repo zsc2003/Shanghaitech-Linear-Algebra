@@ -137,20 +137,11 @@ called **homogeneous linear system**
 
 ---
 
-我们将把一个线性方程组对应的增广矩阵通过一系列初等行变换转化为阶梯
-型的过程称之为高斯消元法 
 # Gauss elimination
-，把一个线性方程组对应的增广
-矩阵通过一系列初等行变换转化为简化阶梯型
-
----
-
+![](./img/unique_solution.png)
+- if $m=n$
 若m = n, 即方程个数与未知数个数相等，且通过对增广矩阵B = (A, b)进行
 一系列初等行变换操作后得到以下形状的(增广)矩阵 ˜B =
-
-![](./img/unique_solution.png)
-
----
 
 那么该方程组具有唯一的一组解x1 = s1, x2 = s2, . . . , xn = sn。这里我们
 把 ˜B记为 ˜B = (In, s), In被称为n × n–单位矩阵，它的对角线上所有元素均
@@ -183,26 +174,23 @@ called **homogeneous linear system**
 
 ---
 
-# some possible solutions
+# some possible situations
 1. no solution
 2. fixed solution
 3. infinite solutions
+4. general solution
+5. specific solution
 
 - specific
   trivial solution: $\vec{x} = \vec{0}$
 
-
-
-
-
----
-general solution
-specific solution + trivial solution
-
-Ax=b
-通解可由一个特解加上齐次方程的通解得到
+- usage
+eg. $Ax=b$
+      general solution = specific solution + trivial solution(homogeneous)
 
 ---
+
+# leading variable & free variable
 
 假设B是一个线性方程组的增广矩阵，其对应的阶梯型 ˜B或者简化
 阶梯型R里不为0的行里所包含的主1所对应的未知数被称为该方程组的主元 (leading variable)，主元之外的所有未知数被称为该方程组的自由元 (free variable)
