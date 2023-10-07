@@ -231,4 +231,4 @@ x1 = 7 − 3r − 2s, x2 = s, x3 = 1, x4 = r, x5 = 2; r, s 为任意常数
 # Some useful resources
 
 - 3B1B Essence of Linear Algebra
-  直接在B站搜 3b1b线性代数的本质 即可
+ youtube or bilibili
