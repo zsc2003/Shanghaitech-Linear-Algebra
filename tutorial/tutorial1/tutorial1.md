@@ -108,6 +108,7 @@ coeffcient matrix $A$ and augmented matrix $\bar{A}=(A|\mathbf{b})$
 called **homogeneous linear system**
   1. at least a **trivial solution**
   2. may have non-trivial solutions(linear independence) 
+  > one non-trivial solution $\Rightarrow$ infinite non-trivial solutions
 
 ---
 
@@ -120,12 +121,14 @@ called **homogeneous linear system**
 
 # row echelon form & reduced row echelon form
 
-1. 该矩阵中任何不为0的行里所包含的第一个非零的项都是1。我们称这样的项
-为主1 (leading 1);
-2. 该矩阵中任何为0的行一定在不为0的行的下方;
-3. 对于该矩阵中任意两个相相相邻邻邻且不不不为为为0的，上面的行里所包含的主1一定位于下面的行里所包含的主1的左侧;那么该矩阵被称为阶梯型(row echelon form)。若一个阶梯型额外满足以下条件
+## row echelon form
+- leading 1
+- Any row in the matrix that is 0 must be below the row that is not 0
+- upper row's leading 1 must be to the left of the lower row's leading 1
 
-该矩阵中任何不为0的行里所包含的主1是其所在的列里唯一一个不为0的项，那么该矩阵被称为简化阶梯型(reduced row echelon form)
+## reduced row echelon form
+
+- The leading 1 contained in any row of the matrix that is not 0 is the only term in the column that is not 0
 
 ---
 
@@ -140,37 +143,11 @@ called **homogeneous linear system**
 # Gauss elimination
 ![](./img/unique_solution.png)
 - if $m=n$
-若m = n, 即方程个数与未知数个数相等，且通过对增广矩阵B = (A, b)进行
-一系列初等行变换操作后得到以下形状的(增广)矩阵 ˜B =
+  i.e. unknowns = equations
 
-那么该方程组具有唯一的一组解x1 = s1, x2 = s2, . . . , xn = sn。这里我们
-把 ˜B记为 ˜B = (In, s), In被称为n × n–单位矩阵，它的对角线上所有元素均
-为1，其他不在对角线上的元素均为0; 列向量s = (s1, . . . , sn)是方程的解
+  if the agumented matrix can be transformed into the form of above then the solution is unique
 
----
-
-因此，从现在开始，我们可以把对线性方程组 (m = n) 的消元求解过程转化为如
-何通过一系列初等行变换将其对应的增广矩阵B = (A, b)转化为 ˜B = (In, s)的过
-程，此时s即为方程组的唯一解。特别地，我们现在操作的对象由方程组变为矩
-阵。
-
----
-
-在结束本节之前，我们需要注意到另一个非常重要的问题: 并非所有线性方程
-组对应的增广矩阵都可以通过初等行变换转为 ˜B = (In, s)的形式！ 比如当方程个
-数m与未知数个数n不相等时，原增广矩阵B无法变成 ˜B = (In, s)的形式 (为什么？
-)；同时，即使m = n，一些线性方程组的增广矩阵依然不能通过初等行变换转
-为 ˜B = (In, s)的形式
-
----
-
-我们可以把对线性方程组 (m = n) 的消元求解过程转化为如何通过一系列初
-等行变换将其对应的增广矩阵B = (A, b)转化为 ˜B = (In, s)的过程。此时向
-量s给出方程的唯一解。
-• 并非所有方程组的增广矩阵B都可以通过一系列初等行变换转化为 ˜B = (In, s)的
-形式。
-• 一个线性方程组的增广矩阵B通过一系列初等行变换所转化成的某种“最终
-形态”决定了该方程组是否有解，以及解是否唯一
+- if $m\neq n$?
 
 ---
 
@@ -192,8 +169,9 @@ eg. $Ax=b$
 
 # leading variable & free variable
 
-假设B是一个线性方程组的增广矩阵，其对应的阶梯型 ˜B或者简化
-阶梯型R里不为0的行里所包含的主1所对应的未知数被称为该方程组的主元 (leading variable)，主元之外的所有未知数被称为该方程组的自由元 (free variable)
+$B$ is an augmented matrix of a linear system, its row echelon form is $\tilde{B}$
+
+The unknowns corresponding to the leading 1 in the rows that are not 0 in $\tilde{B}$ are called the **leading variables** of the system of equations, and all the unknowns other than the leading variables are called the **free variables** of the system of equations.
 
 ---
 
@@ -203,17 +181,17 @@ eg. $Ax=b$
 
 ---
 
-我们将
-x1 = 7 − 3r − 2s, x2 = s, x3 = 1, x4 = r, x5 = 2; r, s 为任意常数
-这样的表示称为方程组的通解
+general solutions:
+
+$x_1 = 7 − 3r − 2s, x_2 = s, x_3 = 1, x_4 = r, x_5 = 2$
+
+$r, s\in \mathbb{R}$
 
 
-假如存在某个i ∈ {1, . . . , m}使得矩阵U的第i行为0，而列向量s的第i个坐
-标si ̸= 0，那么该方程组无解。反之该方程组至少有一个解。
-• 如果矩阵U = In为n × n-单位矩阵，那么该方程组有且只有一组解，这个解
-就是向量s。
-• 若方程有解，且U ̸= In，那么该方程组有无穷多组解。
+---
 
+# example for format
+![](./img/homeworkB.png)
 
 ---
 
@@ -226,10 +204,7 @@ x1 = 7 − 3r − 2s, x2 = s, x3 = 1, x4 = r, x5 = 2; r, s 为任意常数
 
 > TFFTTF
 
----
 
-若一个齐次线性
-方程组有一个非平凡解，那么它必然有无穷多个非平凡解
 
 ---
 
