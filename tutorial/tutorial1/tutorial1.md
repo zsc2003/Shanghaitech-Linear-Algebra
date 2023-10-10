@@ -20,10 +20,10 @@ paginate: true
 ---
 
 # About the tutorial
-- time: Every Tuesday 19:00(may be changed?)
+- time: Every Tuesday 18:00
 - place: SIST 1A-106
 
-1. hand out homework
+1. ~~hand out homework~~
   grade distribution:
   平时成绩 30%； 期中考试30%；期末考试 40%
 2. some discussion(please post your questions before the tutorial)
@@ -163,7 +163,7 @@ called **homogeneous linear system**
 
 - usage
 eg. $Ax=b$
-      general solution = specific solution + trivial solution(homogeneous)
+      general solution = specific solution + non-trivial solutions(homogeneous)
 
 ---
 
@@ -203,41 +203,6 @@ $r, s\in \mathbb{R}$
 ![](./img/example.png)
 
 > TFFTTF
-
-
-
----
-
-# Matrices
-
-- square matrix
-  diagonal
-- diagonal matrix
-- upper(lower) triangular matrix
-- identity matrix
-- zero matrix
-- symmetric matrix
-- skew-symmetric matrix
-- orthogonal matrix
-- .............
----
-
-# Matrices
-
-- row vector
-- column vector
-
-> A matrix can be view as a set of vectors(row/column)
-
----
-
-# Matrix Operations
-
-- equality
-- addition(subtraction)
-- scalar multiplication
-- matrix multiplication
-- division?
 
 ---
 
