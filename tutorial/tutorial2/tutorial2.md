@@ -5,7 +5,7 @@ paginate: true
 
 ---
 
-# Linear Algebra Tutorial 
+# Linear Algebra Tutorial2
 2023.10.17
 
 ---
@@ -79,7 +79,7 @@ $trace(A)=\sum_{i=1}^n a_{ii}$
 
 - $trace(AB) = trace(BA)$
 proof:
-$trace(AB)=\sum_{i=1}^n (AB)_{ii}=\sum_{i=1}^n \sum_{j=1}^n a_{ij}b_{ji}$$=\sum_{j=1}^n \sum_{i=1}^n b_{ji}a_{ij}=\sum_{j=1}^n (BA)_{jj}=trace(BA)$
+$trace(AB)=\sum\limits_{i=1}^n (AB)_{ii}=\sum\limits_{i=1}^n \sum\limits_{j=1}^n a_{ij}b_{ji}$$=\sum\limits_{j=1}^n \sum\limits_{i=1}^n b_{ji}a_{ij}=\sum\limits_{j=1}^n (BA)_{jj}=trace(BA)$
 - matrix inner product
 $<A,B>=trace(A^TB)$
 
@@ -201,22 +201,38 @@ A^{-1}=\frac{1}{ad-bc}
 \end{aligned}$
 
 > actually, $A^{-1}=\frac{1}{|A|}A^*$, where $A^*$ is the adjugate matrix of $A$
+---
+
+![](./img/21mid.png)
 
 ---
 
-# Elementary matrices and a method for finding $A^{−1}$
+# use elementary row operations to find $A^{-1}$
 
 # important!
 
 > will be proved tomorrow
 
+simply proof:
+
 $E_kE_{k−1}\cdots E_{1}A = I_n$
+$A^{-1}(A|I_n) = (I_n|A^{-1})$
 
 ---
 
-![](./img/21mid.png)
+- we can also use the foundamental column operations to find $A^{-1}$
 
+$\left[\begin{array}{l}A \\ B\end{array}\right] A^{-1}=\left[\begin{array}{c}E \\ B A^{-1}\end{array}\right]$
 
+# but we cannot mix row and column operations!!!
+
+---
+
+- an example
+
+![](./img/inverse.png)
+
+- verify
 
 ---
 
@@ -229,7 +245,3 @@ $E_kE_{k−1}\cdots E_{1}A = I_n$
 3. $A$'s reduced row echolon form is $I_n$
 4. $A$ can be expressed as a product of elementary matrices
 5. for a $n\times 1$ vector $b$, the equation system $Ax=b$ has a (unique) solution
-
----
-
-
