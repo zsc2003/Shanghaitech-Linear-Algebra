@@ -90,13 +90,15 @@ $AB=[\mathbf{c_1\ c_2\ \cdots\ c_n}]^TB=[\mathbf{Ac_1\ Ac_2\ \cdots\ c_nB}]$
 ---
 
 # trace
-$trace(A)=\sum_{i=1}^n a_{ii}$
+> only for square matrix
+
+$trace(A)=\sum\limits_{i=1}^n a_{ii}$
 
 - $trace(AB) = trace(BA)$
 proof:
 $trace(AB)=\sum\limits_{i=1}^n (AB)_{ii}=\sum\limits_{i=1}^n \sum\limits_{j=1}^n a_{ij}b_{ji}$$=\sum\limits_{j=1}^n \sum\limits_{i=1}^n b_{ji}a_{ij}=\sum\limits_{j=1}^n (BA)_{jj}=trace(BA)$
 - matrix inner product
-$<A,B>=trace(A^TB)$
+$<A,B>=trace(A^TB)=trace(B^TA)$
 
 ---
 
@@ -121,31 +123,24 @@ $(A^⊤)_{ij} = (A)_{ji}$
 ---
 # matrix properties
 
-- the commutative law
-  $AB=BA$ if and only if $A$ and $B$ are both diagonal matrices（是真的吗？查一下充要条件）
-  最典型的反例就是ABsize不同
+- no commutative law!!
+  $AB= BA$
+  most common counterexample is $A,B$ are not square matrices
 
 - no cancellation law!!
   $AB=AC \nRightarrow B=C$
   $AB=0 \nRightarrow A=0$ or $B=0$
   > 0 matrix is a matrix with all elements are 0. Not a number.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 # polynomial of a matrix
 
+- the binomial theorem
+  $(A+B)^n=\sum\limits_{k=0}^n C_n^k A^kB^{n-k}$
+> It does not work
+
+eg. 
 $\begin{aligned}
 A=
 \left[\begin{array}{cc}-1 & 2 \\ 0 & 3
@@ -173,7 +168,15 @@ $\begin{aligned}
 
 # partitioned matrix
 
+![](./img/partition.png)
 
+$A_{11},A_{12},A_{21},A_{22}$ are called submatrices of $A$
+
+---
+
+# partitioned matrix
+
+![](./img/partition2.png)
 
 ---
 
@@ -216,6 +219,24 @@ A^{-1}=\frac{1}{ad-bc}
 \end{aligned}$
 
 > actually, $A^{-1}=\frac{1}{|A|}A^*$, where $A^*$ is the adjugate matrix of $A$
+
+---
+
+# elementary operations $\to$ elementary matrices' product
+
+- every elementary row operation can be implemented by left multiplying an elementary matrix
+
+- similarly, every elementary column operation can be implemented by right multiplying an elementary matrix
+
+> 左行右列
+
+
+
+
+
+
+
+
 ---
 
 ![](./img/21mid.png)
