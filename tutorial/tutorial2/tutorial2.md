@@ -10,6 +10,21 @@ paginate: true
 
 ---
 
+# homework
+
+free variables
+eg. $x_3=s,x_4=r$
+**$s,r\in \mathbf{R}$**!
+
+- consistent 有解的
+- inconsistent 无解的
+
+---
+
+![](./img/hw1_C.png)
+
+---
+
 # Matrices
 - representation form
   $M_{m\times n}$ : a  $m \times n$ -matrix
