@@ -218,4 +218,33 @@ $|D_n|=b\cdot |D_{n-1}| + a_n$
 
 ---
 
-![](./img/D5.png)
+$A=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+2 & 3 & 2 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+
+find $C_{21}+C_{22}+5C_{23}+4C_{24}$
+
+where $C_{ij}$ is the cofactor of $a_{ij}$
+
+---
+
+$A=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+2 & 3 & 2 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+
+construct:
+$A'=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+1 & 1 & 5 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+so $C_{21}+C_{22}+5C_{23}+4C_{24}=|A'|$
+and since $A'$ has two same rows, $|A'|=0$
+so $C_{21}+C_{22}+5C_{23}+4C_{24}=0$
