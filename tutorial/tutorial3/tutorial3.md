@@ -213,3 +213,9 @@ a_n & a_{n-1} & a_{n-2} & \cdots & a_2 & b + a_1
 $|D_n|=b\cdot |D_{n-1}| + a_n$
 
 ---
+
+![](./img/D4.png)
+
+---
+
+![](./img/D5.png)
