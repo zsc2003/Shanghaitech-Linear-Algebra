@@ -144,6 +144,12 @@ $|A^{-1}|=\frac{1}{|A|}$
 
 ---
 
+# example
+- calculate the determinant of the following matrix
+![](./img/hw3.png)
+
+---
+
 # Vandermonde determinant
 $V=\begin{bmatrix}
 1 & x_1 & x_1^2 & \cdots & x_1^{n-1} \\
