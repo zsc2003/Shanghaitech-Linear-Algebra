@@ -137,6 +137,12 @@ $\forall A\in \mathbb{R}^{n\times n}$
 
 定义:....
 
+
+# TODO!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
 - $A^*=adj(A)=C^T$
 - If $A$ is **invertible**
   $A^{-1}=\dfrac{1}{|A|}A^*$
@@ -152,6 +158,7 @@ $|A^*| = |A|^{n-1}$
 
 
  $|A^*|=0$
+# TODO!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
@@ -230,3 +237,5 @@ $\vdots$
 # linear space
 angle $\theta$ between two vectors $\mathbf{x},\mathbf{y}$
 $cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{<\mathbf{x},\mathbf{x}>\cdot<\mathbf{y},\mathbf{y}>} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
+
+# TODO!!!!!!!!!!!!!!!!!!!!!!!!!!
