@@ -12,7 +12,7 @@ paginate: true
 
 # homework
 
-
+- $A,B$ are upper triangular matrix, then $AB, A^k...$ are also upper triangular matrix
 
 
 
@@ -121,19 +121,36 @@ so $C_{21}+C_{22}+5C_{23}+4C_{24}=0$
 
 # determinant property
 
-$\forall A\in \mathbb{R}^{n\times n}$, if $i\neq k$, then 
+$\forall A\in \mathbb{R}^{n\times n}$
+- if $i\neq k$, then 
+  $a_{i1}C_{k1}+a_{i2}C_{k2}+\cdots+a_{in}C_{kn}=0$
 
-$a_{i1}C_{k1}+a_{i2}C_{k2}+\cdots+a_{in}C_{kn}=0$
+- if $i=k$, then 
+  $a_{i1}C_{k1}+a_{i2}C_{k2}+\cdots+a_{in}C_{kn}=|A|$
+  > so called **Laplace expansion**
 
 ---
 
 # adjoint matrix
-- matrix of cofactors from $A$
-- $adj(A)=C^T$
+- $C$: matrix of cofactors from $A$
+
+定义:....
+
+- $A^*=adj(A)=C^T$
+- If $A$ is **invertible**
+  $A^{-1}=\dfrac{1}{|A|}A^*$
+  $\Rightarrow AA^*=A^*A=|A|I$
+
+---
+
+# adjoint matrix
+
+$|A^*| = |A|^{n-1}$
+
+- but if $A$ is not invertible??
 
 
-
-
+ $|A^*|=0$
 
 
 
@@ -196,3 +213,17 @@ $|D_n|=b\cdot |D_{n-1}| + a_n$
 ---
 
 
+行列式计算中的一些常见技巧(不完全)：假设我们要求n阶矩阵Dn的行列式，
+那么可以试图
+• 通过一系列行变换或者列变换，构造出含有尽可能多0的一行或者一列，然
+后沿着这一行或列进行代数余子式展开。这样通常会得到与Dn结构相同但
+阶数减少的方阵Dk，k ≤ n − 1。由此我们可以找到Dn的行列式与Dk，k ≤
+n − 1的行列式之间的关系，从而确定Dn行列式的通项公式。比如在例子1中
+我们得到det(Dn) = Q n
+j=1(xj − x0) det(Dn−1)，在例子3中我们得到det(Dn) −
+det(Dn−1) = det(Dn−1) − det(Dn−2)。
+• 首先计算几个低阶矩阵的行列式，比如D1，D2，D3，猜出Dn的通项公式，
+然后使用数学归纳法。实际上，要使用数学归纳法，我们依然需要找到Dn的
+行列式与Dk，k ≤ n−1的行列式之间的关系，比如第三次作业的Problem E。
+• 更多具体技巧需要大家通过做题自己总结，或者参考一些课外教材，比如同
+济大学出版社的线性代数习题集等。
