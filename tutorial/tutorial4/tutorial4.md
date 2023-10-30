@@ -12,12 +12,13 @@ paginate: true
 
 # homework
 
-- $A,B$ are upper triangular matrix, then $AB, A^k...$ are also upper triangular matrix
+- $A,B$ are upper triangular matrix, then $AB,  A^k...$ are also upper triangular matrix
+  It is theorem on book, we do not need to prove it but need to mention it
 
+- the symbol [] and || 
+  [] for matrix, || for determinant
 
-
-
-
+- **iff** $\Leftrightarrow$ if and only if  $\Leftrightarrow$ 当且仅当
 
 ---
 
@@ -201,9 +202,6 @@ b & -1 & 0 & \cdots & 0 & 0 \\
 a_n & a_{n-1} & a_{n-2} & \cdots & a_2 & b + a_1
 \end{bmatrix}$
 
-> $|D_n|=b\cdot |D_{n-1}| + a_n(-1)^{n+1}(-1)^{n-1}$
-$|D_n|=b\cdot |D_{n-1}| + a_n$
-
 ---
 
 # determinant
@@ -211,19 +209,24 @@ $|D_n|=b\cdot |D_{n-1}| + a_n$
 ![](./img/D4.png)
 
 ---
+# some mostly used tricks
+- row(column) operations, construct a row(column) with as many zeros as possible, then use the Laplace expansion
 
+- try to calculate the determinant with lower dimension, the use induction
 
-行列式计算中的一些常见技巧(不完全)：假设我们要求n阶矩阵Dn的行列式，
-那么可以试图
-• 通过一系列行变换或者列变换，构造出含有尽可能多0的一行或者一列，然
-后沿着这一行或列进行代数余子式展开。这样通常会得到与Dn结构相同但
-阶数减少的方阵Dk，k ≤ n − 1。由此我们可以找到Dn的行列式与Dk，k ≤
-n − 1的行列式之间的关系，从而确定Dn行列式的通项公式。比如在例子1中
-我们得到det(Dn) = Q n
-j=1(xj − x0) det(Dn−1)，在例子3中我们得到det(Dn) −
-det(Dn−1) = det(Dn−1) − det(Dn−2)。
-• 首先计算几个低阶矩阵的行列式，比如D1，D2，D3，猜出Dn的通项公式，
-然后使用数学归纳法。实际上，要使用数学归纳法，我们依然需要找到Dn的
-行列式与Dk，k ≤ n−1的行列式之间的关系，比如第三次作业的Problem E。
-• 更多具体技巧需要大家通过做题自己总结，或者参考一些课外教材，比如同
-济大学出版社的线性代数习题集等。
+- **practice more!!**
+
+---
+# linear space
+inner product $<\cdot, \cdot>$
+- $\mathbb{R}^n$ vector: dot product $\mathbf{x}\cdot\mathbf{y}=\mathbf{x}^T\mathbf{y}=\mathbf{y}^T\mathbf{x}$
+- $M_{m\times n}(\mathbb{R})$ matrix: $<A,B>=tr(B^TA)$
+- $P_n(\mathbb{R})$ polynomial: $<p,q>=\int_0^1p(x)q(x)dx$
+- $C[a,b]$ continuous function: $<f,g>=\int_a^bf(x)g(x)dx$
+$\vdots$
+
+---
+
+# linear space
+angle $\theta$ between two vectors $\mathbf{x},\mathbf{y}$
+$cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{<\mathbf{x},\mathbf{x}>\cdot<\mathbf{y},\mathbf{y}>} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
