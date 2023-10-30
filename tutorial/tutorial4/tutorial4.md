@@ -13,6 +13,135 @@ paginate: true
 # homework
 
 
+
+
+
+
+
+
+---
+
+# determinant properties
+
+> compare with the elementary row(column) operations
+1. $B$ is obtained from $A$ by interchanging two rows(columns)
+$|B|=-|A|$
+2. $B$ is obtained from $A$ by multiplying one row(column) by a nonzero scalar $k$
+$|B|=k|A|$
+3. $B$ is obtained from $A$ by adding a multiple of one row(column) to another row(column)
+$|B|=|A|$
+> we can mix row and column operations when calculating the determinant
+but we can only use row or column operations when calculating the inverse matrix!!!!
+
+---
+
+# determinant properties
+
+> If a matrix $A$ have two same rows(columns), then $|A|=0$
+
+suppose $B$ is $A$ swapping the two same rows(columns), from property 1, $|B|=-|A|$
+
+but $B=A$, so $|B|=|A|$
+
+so $|A|=-|A|$, $|A|=0$
+
+---
+
+# determinant property
+
+![](./img/C.png)
+![](./img/A.png) ![](./img/B.png)
+
+> $|C| = |A| + |B|$
+
+---
+
+# determinant property
+
+- similary
+
+$C=$![](./img/C_column.png)
+![](./img/A_column.png) ![](./img/B_column.png)
+
+
+> $|C| = |A| + |B|$
+essentially: determinant expansion by column
+
+**generally, $|C|\neq |A|+|B|$!!!**
+
+---
+
+# determinant property
+
+- $|AB|=|A||B|$
+  $\Rightarrow R=ABCD..., |R|=|A||B||C|...$
+- $|A^T|=|A|$
+- $|A^{-1}|=\dfrac{1}{|A|}$
+- $|A^k|=|A|^k$
+- $|\lambda A|=\lambda^n|A|$
+
+---
+
+# determinant
+5.
+$A=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+2 & 3 & 2 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+
+find $C_{21}+C_{22}+5C_{23}+4C_{24}$
+
+where $C_{ij}$ is the cofactor of $a_{ij}$
+
+---
+
+# determinant
+5. 
+$A=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+2 & 3 & 2 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+
+construct:
+$A'=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+1 & 1 & 5 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+so $C_{21}+C_{22}+5C_{23}+4C_{24}=|A'|$
+and since $A'$ has two same rows, $|A'|=0$
+so $C_{21}+C_{22}+5C_{23}+4C_{24}=0$
+
+---
+
+# determinant property
+
+$\forall A\in \mathbb{R}^{n\times n}$, if $i\neq k$, then 
+
+$a_{i1}C_{k1}+a_{i2}C_{k2}+\cdots+a_{in}C_{kn}=0$
+
+---
+
+# adjoint matrix
+- matrix of cofactors from $A$
+- $adj(A)=C^T$
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 # determinant 
@@ -66,39 +195,4 @@ $|D_n|=b\cdot |D_{n-1}| + a_n$
 
 ---
 
-# determinant
-5.
-$A=\begin{bmatrix}
-1 & 1 & 5 & 4 \\
-2 & 3 & 2 & 4 \\
-1 & 6 & 0 & 3 \\
-4 & 2 & 5 & 1
-\end{bmatrix}$
 
-find $C_{21}+C_{22}+5C_{23}+4C_{24}$
-
-where $C_{ij}$ is the cofactor of $a_{ij}$
-
----
-
-# determinant
-5. 
-$A=\begin{bmatrix}
-1 & 1 & 5 & 4 \\
-2 & 3 & 2 & 4 \\
-1 & 6 & 0 & 3 \\
-4 & 2 & 5 & 1
-\end{bmatrix}$
-
-construct:
-$A'=\begin{bmatrix}
-1 & 1 & 5 & 4 \\
-1 & 1 & 5 & 4 \\
-1 & 6 & 0 & 3 \\
-4 & 2 & 5 & 1
-\end{bmatrix}$
-so $C_{21}+C_{22}+5C_{23}+4C_{24}=|A'|$
-and since $A'$ has two same rows, $|A'|=0$
-so $C_{21}+C_{22}+5C_{23}+4C_{24}=0$
-
----
