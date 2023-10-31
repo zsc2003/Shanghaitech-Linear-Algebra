@@ -304,7 +304,7 @@ $\vdots$
 
 # linear space
 angle $\theta$ between two vectors $\mathbf{x},\mathbf{y}$
-$cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{<\mathbf{x},\mathbf{x}>\cdot<\mathbf{y},\mathbf{y}>} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
+$cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{\sqrt{<\mathbf{x},\mathbf{x}>}\cdot\sqrt{<\mathbf{y},\mathbf{y}>}} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
 
 so $\mathbf{x}\cdot\mathbf{y}=\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|cos\theta$
 
