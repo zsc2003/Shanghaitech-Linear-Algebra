@@ -83,6 +83,62 @@ essentially: determinant expansion by column
 
 ---
 
+# Cramer's rule
+
+$A\mathbf{x}=\mathbf{b}$, $|A|\neq 0$ ($A_{n\times n}$)
+
+
+$A=\begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & & & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{bmatrix}$, $A_i=\begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1,i-1} & b_1 & a_{1,i+1} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2,i-1} & b_2 & a_{2,i+1} & \cdots & a_{2n} \\
+\vdots & & & & \vdots & & & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{n,i-1} & b_n & a_{n,i+1} & \cdots & a_{nn}
+\end{bmatrix}$
+
+then $x_i=\dfrac{|A_i|}{|A|}$
+
+where $A_i$ is the matrix obtained from $A$ by replacing the $i$th column of $A$ by $\mathbf{b}$
+
+---
+
+# Cramer's rule
+- e.g. when the coefficient is complicated
+
+![](./img/Cramer.png)
+
+---
+
+# Cramer's rule
+
+$(e^u+\sin v)\dfrac{\partial u}{\partial x}+(u\cos v)\dfrac{\partial v}{\partial x}=1$
+$(e^u-\cos v)\dfrac{\partial u}{\partial x}    +(u\sin v)\dfrac{\partial v}{\partial x}=0$
+
+with Cramer's rule, we can get 
+$\dfrac{\partial u}{\partial x}=\dfrac{\big|\begin{matrix}
+1 & u\cos v \\
+0 & u\sin v
+\end{matrix}\big|}
+{\big|\begin{matrix}
+e^u+\sin v & u\cos v \\
+e^u-\cos v & u\sin v
+\end{matrix}\big|}$= $\dfrac{\sin v}{e^u(\sin v-\cos v) +1}$,
+$\dfrac{\partial v}{\partial x}= \dfrac{\big|\begin{matrix}
+e^u+\sin v & 1 \\
+e^u-\cos v & 0
+\end{matrix}\big|}
+{\big|\begin{matrix}
+e^u+\sin v & u\cos v \\
+e^u-\cos v & u\sin v
+\end{matrix}\big|}$= $\dfrac{-(e^u-\cos v)}{(e^u(\sin v-\cos v) +1)u}$
+
+
+---
+
 # determinant
 5.
 $A=\begin{bmatrix}
@@ -133,7 +189,8 @@ $\forall A\in \mathbb{R}^{n\times n}$
 ---
 
 # adjoint matrix
-- $C$: matrix of cofactors from $A$
+- $C_{i,j}$: matrix of cofactors of $a_{i,j}$
+**代数余子式**
 
 定义:....
 
@@ -238,4 +295,41 @@ $\vdots$
 angle $\theta$ between two vectors $\mathbf{x},\mathbf{y}$
 $cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{<\mathbf{x},\mathbf{x}>\cdot<\mathbf{y},\mathbf{y}>} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
 
-# TODO!!!!!!!!!!!!!!!!!!!!!!!!!!
+so $\mathbf{x}\cdot\mathbf{y}=\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|cos\theta$
+
+$\mathbf{x}\cdot \mathbf{y}=0\Leftrightarrow \mathbf{x}\perp \mathbf{y}$
+
+---
+
+# cross product
+$\mathbf{x}\times\mathbf{y}=\begin{bmatrix}
+x_2y_3-x_3y_2 \\
+x_3y_1-x_1y_3 \\
+x_1y_2-x_2y_1
+\end{bmatrix}$
+- $\mathbf{x}\times\mathbf{y}$ is orthogonal to both $\mathbf{x}$ and $\mathbf{y}$
+- $\left\|\mathbf{x}\times\mathbf{y}\right\|=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\right\|sin\theta$
+- $\mathbf{x}\times\mathbf{y}=-\mathbf{y}\times\mathbf{x}$
+- $\mathbf{x}\times(\mathbf{y}+\mathbf{z})=\mathbf{x}\times\mathbf{y}+\mathbf{x}\times\mathbf{z}$
+- $(k\mathbf{x})\times\mathbf{y}=k(\mathbf{x}\times\mathbf{y})$
+
+---
+
+# cross product
+- the cross product of two vectors can be represented by the determinant
+$\mathbf{x}\times\mathbf{y}=\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+x_1 & x_2 & x_3 \\
+y_1 & y_2 & y_3
+\end{vmatrix}$
+- $\mathbf{x}\times\mathbf{y}=\mathbf{0}\Leftrightarrow \mathbf{x}\parallel\mathbf{y}$
+
+- we can also transfer $\mathbf{x}$ into a matrix $[\mathbf{x}]\mathbf{y}$
+where $[\mathbf{x}]=\begin{bmatrix}
+0 & -x_3 & x_2 \\
+x_3 & 0 & -x_1 \\
+-x_2 & x_1 & 0
+\end{bmatrix}$
+
+> notice that $[\mathbf{x}]$ is skew-symmetric, so its rank is odd
+actually, rank($[\mathbf{x}]$)=2
