@@ -191,39 +191,50 @@ $\forall A\in \mathbb{R}^{n\times n}$
 # adjoint matrix
 - $C_{i,j}$: matrix of cofactors of $a_{i,j}$
 **代数余子式**
+- $C$ : matrix of cofactors from $A$
+  $A$的代数余子式矩阵
 
-定义:....
-
-
-# TODO!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
+i.e. $C=\begin{bmatrix}
+C_{11} & C_{12} & \cdots & C_{1n} \\
+C_{21} & C_{22} & \cdots & C_{2n} \\
+\vdots & & & \vdots \\
+C_{n1} & C_{n2} & \cdots & C_{nn}
+\end{bmatrix}$
 
 - $A^*=adj(A)=C^T$
-- If $A$ is **invertible**
-  $A^{-1}=\dfrac{1}{|A|}A^*$
-  $\Rightarrow AA^*=A^*A=|A|I$
+- **no matter $A$ is invertible or not**,$AA^*=A^*A=|A|I$
+- If $A$ is **invertible**, $A^{-1}=\dfrac{1}{|A|}A^*$
 
 ---
 
 # adjoint matrix
 
-$|A^*| = |A|^{n-1}$
+- $|A^*| = |A|^{n-1}$
+$AA^*=|A|I$
+$|AA^*|=|A|^n|I|=|A|^n$
+$|A^*||A|=|A|^n$
+$|A^*|=|A|^{n-1}$
+
+> any constrains? 
+
+---
+
+# adjoint matrix
 
 - but if $A$ is not invertible??
+  i.e. $|A|=0$
+  is $|A^*|=0$?
 
+- Proof by Contradiction
+  suppose $|A^*|\neq 0$, then
+  $(AA^{*})(A^{*})^{-1}=|A|I(A^*)^{-1}=\mathbf{0}$
+  also, $(AA^{*})(A^{*})^{-1}=A(A^*(A^*)^{-1})=A$
 
- $|A^*|=0$
-# TODO!!!!!!!!!!!!!!!!!!!!!!!!!!
+  so $A=0 \Rightarrow A^*=0$, which is a contradiction with $|A^*|\neq 0$
 
+  so $|A^*|=0$
 
-
-
-
-
-
-
+> so $|A^*|=|A|^{n-1}$ is always true
 ---
 
 # determinant 
