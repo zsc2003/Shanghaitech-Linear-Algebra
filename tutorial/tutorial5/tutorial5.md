@@ -79,6 +79,9 @@ $\mathbf{w}_1=proj_{\mathbf{v}}(\mathbf{u})=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\l
 $\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\mathbf{u}-\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|v\right\|^2}\mathbf{v}$
 
 
+---
+# cross product
+![w:15cm](./img/cross1.png) ![w:14cm](./img/cross2.png) 
 
 
 ---
@@ -117,9 +120,6 @@ x_3 & 0 & -x_1 \\
 actually, rank($[\mathbf{x}]$)=2
 
 ---
-![w:15cm](./img/cross1.png) ![w:14cm](./img/cross2.png) 
-
----
 
 # cross product
 求与两个向量正交的向量
@@ -127,6 +127,30 @@ actually, rank($[\mathbf{x}]$)=2
 点叉乘->所在直线？？？？？
 直线->交点
 
+---
+
+# scalar triple product
+- 标量三重积(混合积)
+$\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\begin{vmatrix}
+x_1 & x_2 & x_3 \\
+y_1 & y_2 & y_3 \\
+z_1 & z_2 & z_3
+\end{vmatrix}$
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\mathbf{y}\cdot(\mathbf{z}\times\mathbf{x})=\mathbf{z}\cdot(\mathbf{x}\times\mathbf{y})$
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\mathbf{0}\Leftrightarrow \mathbf{x},\mathbf{y},\mathbf{z}$ are coplanar
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\times\mathbf{z}\right\|cos\theta$
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{y}\right\|\left\|\mathbf{z}\times\mathbf{x}\right\|cos\theta$
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{z}\right\|\left\|\mathbf{x}\times\mathbf{y}\right\|cos\theta$
+
+---
+
+# cross product geometric meaning
+
+- parallelogram area
+    平行四边形面积
+
+- volume of parallelepiped
+    平行六面体体积
 ---
 
 # representation of lines and planes
