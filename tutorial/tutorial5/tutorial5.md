@@ -81,12 +81,18 @@ $d(u,v)=d(u,v)=\left\|\mathbf{u}-\mathbf{v}\right\|=\sqrt{(u_1-v_1)^2+(u_2-v_2)^
 ---
 
 # dot(inner) product
+- $\mathbf{u}\cdot\mathbf{w}=u_1w_1+u_2w_2+\cdots+u_nw_n$
 
+So the Euclidean norm can be represented by the dot product
+- $\left\|\mathbf{v}\right\|=\sqrt{\mathbf{v}\cdot\mathbf{v}}$
 
+regard $\mathbf{v},\mathbf{w}$ as a column vector
+$\mathbf{v}\cdot\mathbf{w}=\mathbf{w}\cdot\mathbf{v}=\mathbf{v}^T\mathbf{w}=\mathbf{w}^T\mathbf{v}$
 
+if $A_{n\times n}$, $\mathbf{v},\mathbf{w}\in\mathbb{R}^n$
 
-
-
+- $\mathbf{Av}\cdot\mathbf{w}=(\mathbf{Av})^T\mathbf{w}=\mathbf{v}^T\mathbf{A}^T\mathbf{w}=\mathbf{v}\cdot\mathbf{A}^T\mathbf{w}$
+- $\mathbf{v}\cdot\mathbf{Aw}=\mathbf{v}^T(\mathbf{A}\mathbf{w})=(\mathbf{v}^T\mathbf{A})\mathbf{w}=(\mathbf{A}\mathbf{v}^T)^T\mathbf{w}=\mathbf{A}^T\mathbf{v}\cdot\mathbf{w}$
 
 
 ---
