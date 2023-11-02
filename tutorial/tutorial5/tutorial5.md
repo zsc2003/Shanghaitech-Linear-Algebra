@@ -14,23 +14,80 @@ paginate: true
 
 ---
 
-# homework
+# math review
+- vector
+- Cauchy inequality
+- dot product
+- cross product
+$\vdots$
 
 ---
 
 # Euclidean space
 
-$\mathbb{R}^n$
+- $\mathbb{R}^n$ n-dimensional Euclidean space
+  $\mathbf{v}\in\mathbb{R}^n$, $\mathbf{v}=(v_1,\cdots,v_n)$
+- **linear combination**
+  $\mathbf{w} = k_1\mathbf{v}_1 + k_2\mathbf{v}_2 + \cdots + k_r\mathbf{v}_r$
+  $\mathbf{w}$ is the linear combination of $\mathbf{v}_1,\cdots,\mathbf{v}_r$
+  $k_1,\cdots,k_r$ are the coefficients of $\mathbf{v}_1,\cdots,\mathbf{v}_r$
+- **span**
+    the set of all linear combinations of $\mathbf{v}_1,\cdots,\mathbf{v}_r$ is called the span of $\mathbf{v}_1,\cdots,\mathbf{v}_r$
+    $span\{\mathbf{v}_1,\cdots,\mathbf{v}_r\}=\{\mathbf{w}|\mathbf{w}=k_1\mathbf{v}_1 + k_2\mathbf{v}_2 + \cdots + k_r\mathbf{v}_r, k_1,\cdots,k_r\in\mathbb{R}\}$
+---
+
+# linear independence*
+
+- standard unit vector 标准单位向量
+    there are $n$ standard unit vectors in $\mathbb{R}^n$
+    $\mathbf{e}_i=(0,\cdots,0,1,0,\cdots,0)$
+    $\mathbf{e}_i$ has 1 in the $i$-th position and 0 elsewhere
+    eg. $\mathbf{w}=(1, 2)$, $\mathbf{w}=1\mathbf{e}_1+2\mathbf{e}_2$
+
+- is the representation unique?
+    $\mathbf{w}=(1,2)$
+    $\mathbf{v_1}=(1, 0),\mathbf{v_2} = (0, 1),\mathbf{v_3} = (1, 1)$
+    $\mathbf{w}=1\mathbf{v_1}+2\mathbf{v_2}+0\mathbf{v_3}$
+    $\mathbf{w}=-1\mathbf{v_1}+0\mathbf{v_2}+1\mathbf{v_3}$
+    $\mathbf{w}=0\mathbf{v_1}+1\mathbf{v_2}+1\mathbf{v_3}$
+> unique represetation $\Leftrightarrow$ linearly independent
+---
+
+# linear independence*
+- $\mathbf{v}_1,\cdots,\mathbf{v}_r$ are linearly independent if the only solution of $k_1\mathbf{v}_1 + k_2\mathbf{v}_2 + \cdots + k_r\mathbf{v}_r=\mathbf{0}$ is $k_1=k_2=\cdots=k_r=0$
+- $\mathbf{v}_1,\cdots,\mathbf{v}_r$ are linearly dependent if and only if one of them is a linear combination of the others
 
 ---
 
-# norm, distance
+# norm
+
+- norm(Euclidean norm)
+$\left\|\mathbf{v}\right\|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
+    distance to the origin
+    $\left\|\mathbf{v}\right\|\geq 0$
+    $\left\|\mathbf{v}\right\|=0\Leftrightarrow \mathbf{v}=\mathbf{0}$
+    $\left\|k\mathbf{v}\right\|=|k|\left\|\mathbf{v}\right\|$
 
 - normalization
+    $\mathbf{u}=\dfrac{\mathbf{v}}{\left\|\mathbf{v}\right\|}$
+    get the unit vector $\mathbf{u}$: normailize $\mathbf{v}$
 
 ---
 
-# dot product
+# distance
+the Euclidean distance between $\mathbf{u}$ and $\mathbf{v}$
+$d(u,v)=d(u,v)=\left\|\mathbf{u}-\mathbf{v}\right\|=\sqrt{(u_1-v_1)^2+(u_2-v_2)^2+\cdots+(u_n-v_n)^2}$
+
+---
+
+# dot(inner) product
+
+
+
+
+
+
+
 
 ---
 
@@ -121,14 +178,6 @@ actually, rank($[\mathbf{x}]$)=2
 
 ---
 
-# cross product
-求与两个向量正交的向量
-
-点叉乘->所在直线？？？？？
-直线->交点
-
----
-
 # scalar triple product
 - 标量三重积(混合积)
 $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\begin{vmatrix}
@@ -141,6 +190,10 @@ z_1 & z_2 & z_3
 - $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\times\mathbf{z}\right\|cos\theta$
 - $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{y}\right\|\left\|\mathbf{z}\times\mathbf{x}\right\|cos\theta$
 - $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{z}\right\|\left\|\mathbf{x}\times\mathbf{y}\right\|cos\theta$
+
+- Lagrange’s identity
+$\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\mathbf{v}\right\|^2-(\mathbf{u}\cdot\mathbf{v})^2$
+
 
 ---
 
@@ -164,3 +217,18 @@ $\mathbf{r}=\mathbf{r}_0+s\mathbf{v}+t\mathbf{w}$
 $n_1(x-x_0)+n_2(y-y_0)+n_3(z-z_0)=0$
 $\mathbf{n}=(n_1,n_2,n_3)$ is the normal vector of the plane
 $\mathbf{n}= \mathbf{v}\times\mathbf{w}$
+
+
+---
+
+# cross product
+
+过平面上两点$p_1=(x_1,y_1)$,$p_2=(x_2,y_2)的
+
+齐次坐标: $p_1=(x_1,y_1,1)$,$p_2=(x_2,y_2,1)$
+直线的方向向量: $\mathbf{v}=\mathbf{p}_1\times\mathbf{p}_2$
+
+两条直线: $\mathbf{v}_1,\mathbf{v}_2$
+交点: $\mathbf{p}=\mathbf{v}_1\times\mathbf{v}_2$
+
+前提: 平面上
