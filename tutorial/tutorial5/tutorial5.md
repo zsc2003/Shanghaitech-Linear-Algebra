@@ -205,6 +205,13 @@ proof in hw
 
 
 
+
+
+
+
+
+
+
 ---
 
 # Projection Theorem
@@ -324,3 +331,10 @@ $\mathbf{n}= \mathbf{v}\times\mathbf{w}$
 交点: $\mathbf{p}=\mathbf{v}_1\times\mathbf{v}_2$
 
 前提: 平面上
+
+
+
+---
+
+# determinant practice
+![](./img/mid_determinant.png)
