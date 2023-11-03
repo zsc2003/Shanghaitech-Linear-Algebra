@@ -57,6 +57,23 @@ where $A_i$ is the matrix obtained from $A$ by replacing the $i$th column of $A$
 
 ---
 
+# determinant property
+
+![](./img/C.png)
+![](./img/A.png) ![](./img/B.png)
+
+> $|C| = |A| + |B|$
+
+---
+
+find $A=\left | \begin{matrix}
+ax+by & ay+bz & az+bx \\
+ay+bz & az+bx & ax+by \\
+az+bx & ax+by & ay+bz  
+\end{matrix} \right |$
+
+---
+
 # math review
 - vector
 - Cauchy inequality
@@ -271,8 +288,6 @@ $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\
 # exercise (21-mid)
 
 ![](./img/mid1.png)
-
-> $\sqrt{11}, -2, (1,-2,1), -\dfrac{2}{5}(0,1,2)$
 
 ---
 
