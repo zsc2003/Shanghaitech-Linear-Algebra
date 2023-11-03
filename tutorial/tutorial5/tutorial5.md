@@ -23,6 +23,40 @@ $det(A-B)\neq 0$
 
 ---
 
+---
+
+# Cramer's rule
+
+$A\mathbf{x}=\mathbf{b}$, $|A|\neq 0$ ($A_{n\times n}$)
+
+
+$A=\begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & & & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{bmatrix}$, $A_i=\begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1,i-1} & b_1 & a_{1,i+1} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2,i-1} & b_2 & a_{2,i+1} & \cdots & a_{2n} \\
+\vdots & & & & \vdots & & & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{n,i-1} & b_n & a_{n,i+1} & \cdots & a_{nn}
+\end{bmatrix}$
+
+then $x_i=\dfrac{|A_i|}{|A|}$
+
+where $A_i$ is the matrix obtained from $A$ by replacing the $i$th column of $A$ by $\mathbf{b}$
+
+---
+
+# Cramer's rule
+
+- e.g. when the coefficient is complicated
+- **directly solve one of the variables**
+
+![](./img/cramer.png)
+
+---
+
 # math review
 - vector
 - Cauchy inequality
@@ -233,6 +267,21 @@ $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\
 - volume of parallelepiped
     平行六面体体积
 ---
+
+# exercise (21-mid)
+
+![](./img/mid1.png)
+
+> $\sqrt{11}, -2, (1,-2,1), -\dfrac{2}{5}(0,1,2)$
+
+---
+
+# exercise (20-mid)
+
+![](./img/mid2.png)
+
+---
+
 
 # representation of lines and planes
 - line
