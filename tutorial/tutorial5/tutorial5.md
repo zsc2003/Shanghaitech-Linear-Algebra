@@ -11,6 +11,15 @@ paginate: true
 ---
 
 # homework
+- bonus
+$A,B\in M_{3\times 3}$
+$A^2-AB-2B^2=A-2BA-B$
+$B=\begin{bmatrix}
+-1 & 2 & 1 \\
+0 & 1 & -1 \\
+1 & 3 & 2
+\end{bmatrix}$
+$det(A-B)\neq 0$
 
 ---
 
