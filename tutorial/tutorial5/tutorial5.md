@@ -147,7 +147,9 @@ $\mathbf{x}\cdot \mathbf{y}=0\Leftrightarrow \mathbf{x}\perp \mathbf{y}$
 ...
 
 - orthogonal set
-$balabala$
+$\mathbf{v}_1,\cdots,\mathbf{v}_n$ are orthogonal
+$\left\|\mathbf{v}_1+\cdots+\mathbf{v}_n\right\|= \left\|\mathbf{v}_1\right\|+\cdots+\left\|\mathbf{v}_n\right\|$
+proof in hw
 
 
 
