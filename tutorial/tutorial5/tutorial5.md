@@ -237,10 +237,12 @@ x_1y_2-x_2y_1
 \end{bmatrix}$
 - $\mathbf{x}\times\mathbf{y}$ is orthogonal to both $\mathbf{x}$ and $\mathbf{y}$
 - $\left\|\mathbf{x}\times\mathbf{y}\right\|=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\right\|sin\theta$
-- $\mathbf{x}\times\mathbf{y}=-\mathbf{y}\times\mathbf{x}$
-- $\mathbf{x}\times(\mathbf{y}+\mathbf{z})=\mathbf{x}\times\mathbf{y}+\mathbf{x}\times\mathbf{z}$
-- $(k\mathbf{x})\times\mathbf{y}=k(\mathbf{x}\times\mathbf{y})$
 
+---
+
+# cross product property
+![](./img/cross_property.png)
+- just prove it in homework by the definition of cross product
 ---
 
 # cross product
