@@ -160,6 +160,37 @@ $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$
 
 ---
 
+# properties of norm*
+
+$p$-norm : $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$
+$p\geq 1$
+ 
+- $0$ norm is actually not a norm
+
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+- Cauchy inequality
+
+
+---
+
+# properties of norm*
+- to learn more in IML/numerical optimazation/convex optimazation/...
+![h:12cm](./img/norm.png)
+
+---
+
 # distance
 the Euclidean distance between $\mathbf{u}$ and $\mathbf{v}$
 $d(u,v)=d(u,v)=\left\|\mathbf{u}-\mathbf{v}\right\|=\sqrt{(u_1-v_1)^2+(u_2-v_2)^2+\cdots+(u_n-v_n)^2}$
