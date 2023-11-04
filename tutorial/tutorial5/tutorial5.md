@@ -68,7 +68,7 @@ where $A_i$ is the matrix obtained from $A$ by replacing the $i$th column of $A$
 
 # determinant property
 
-find $A=\left | \begin{matrix}
+calculate $\left | \begin{matrix}
 ax+by & ay+bz & az+bx \\
 ay+bz & az+bx & ax+by \\
 az+bx & ax+by & ay+bz  
@@ -148,6 +148,7 @@ $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$
 
 - $0$ norm:
     $\left\|\mathbf{v}\right\|_0$ is the number of nonzero entries in $\mathbf{v}$
+    **not good** due to it is **not convex**
 
 - $1$ norm:
     $\left\|\mathbf{v}\right\|_1=|v_1|+|v_2|+\cdots+|v_n|$
@@ -162,32 +163,54 @@ $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$
 
 # properties of norm*
 
-$p$-norm : $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$
-$p\geq 1$
+$p$-norm : $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$,  **$p\geq 1$**
  
-- $0$ norm is actually not a norm
+- $0$ norm is actually not a norm, but matric(度量)
+- Cauchy inequality
+    $\sum\limits_{i=1}^n|a_ib_i|\leq\sqrt{\sum\limits_{i=1}^na_i^2}\sqrt{\sum\limits_{i=1}^nb_i^2}$
+- Hölder's inequality (赫尔德不等式)
+    $p,q\geq 1$, $\dfrac{1}{p}+\dfrac{1}{q}=1$
+    $\sum\limits_{i=1}^n|a_ib_i|\leq\left\|x\right\|_p\left\|y\right\|_q$
+    $\sum\limits_{i=1}^n|a_ib_i|\leq\left\|x\right\|_1\left\|y\right\|_\infty$
+    $\sum\limits_{i=1}^n|a_ib_i|\leq\left\|x\right\|_2\left\|y\right\|_2$ -> Cauchy inequality
 
+---
+
+# properties of norm*
+
+
+- Minkowski's inequality(闵可夫斯基不等式)
+$\left\|\mathbf{x}+\mathbf{y}\right\|_p\leq\left\|\mathbf{x}\right\|_p+\left\|\mathbf{y}\right\|_p$
+when $p=2$: triangle inequality
+- $\forall a, \left\|a\mathbf{x}\right\|=|a|\left\|\mathbf{x}\right\|$
+- all norm $f:\mathbb{R}^n\to \mathbb{R}$ are convex.
+
+- to learn more in IML/numerical optimazation/convex optimazation/...
+
+---
+
+# properties of norm*
+![h:12cm](./img/norm.png)
+
+---
+
+# Cauchy-Schwarz inequality
+- vector version
+ $|\mathbf{u}\cdot\mathbf{v}|\leq\left\|\mathbf{u}\right\|\cdot\left\|\mathbf{v}\right\|$
+- calculus version
+ $\int_a^b f(x)g(x)dx\leq\sqrt{\int_a^b f^2(x)dx}\sqrt{\int_a^b g^2(x)dx}$
+- probability version
+ $|E(XY)|\leq\sqrt{E(X^2)}\sqrt{E(Y^2)}$
+
+---
+
+# triangle inequality
 
 - 
 
 
 
 
-
-
-
-
-
-
-
-- Cauchy inequality
-
-
----
-
-# properties of norm*
-- to learn more in IML/numerical optimazation/convex optimazation/...
-![h:12cm](./img/norm.png)
 
 ---
 
@@ -210,28 +233,6 @@ if $A_{n\times n}$, $\mathbf{v},\mathbf{w}\in\mathbb{R}^n$
 
 - $\mathbf{Av}\cdot\mathbf{w}=(\mathbf{Av})^T\mathbf{w}=\mathbf{v}^T\mathbf{A}^T\mathbf{w}=\mathbf{v}\cdot\mathbf{A}^T\mathbf{w}$
 - $\mathbf{v}\cdot\mathbf{Aw}=\mathbf{v}^T(\mathbf{A}\mathbf{w})=(\mathbf{v}^T\mathbf{A})\mathbf{w}=(\mathbf{A}\mathbf{v}^T)^T\mathbf{w}=\mathbf{A}^T\mathbf{v}\cdot\mathbf{w}$
-
----
-
-# Cauchy-Schwarz inequality
-- vector version
- $|\mathbf{u}-\mathbf{v}|\leq\left\|\mathbf{u}\right\|+\left\|\mathbf{v}\right\|$
-- calculus version
- $\int_a^b f(x)g(x)dx\leq\sqrt{\int_a^b f^2(x)dx}\sqrt{\int_a^b g^2(x)dx}$
-- probability version
- $|E(XY)|\leq\sqrt{E(X^2)}\sqrt{E(Y^2)}$
-
----
-
-# triangle inequality
-
-- 
-
-
-
-
-
-
 
 
 
