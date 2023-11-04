@@ -226,7 +226,7 @@ $\mathbf{x}\cdot \mathbf{y}=0\Leftrightarrow \mathbf{x}\perp \mathbf{y}$
 - orthogonal set
 $\mathbf{v}_1,\cdots,\mathbf{v}_n$ are orthogonal
 $\left\|\mathbf{v}_1+\cdots+\mathbf{v}_n\right\|= \left\|\mathbf{v}_1\right\|+\cdots+\left\|\mathbf{v}_n\right\|$
-proof in hw
+proof in homework
 
 
 
@@ -242,7 +242,7 @@ proof in hw
 
 # Projection Theorem
 - orthogonal projection of $\mathbf{u}$ on $\mathbf{v}$
-$\mathbf{w}_1=proj_{\mathbf{v}}(\mathbf{u})=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|v\right\|^2}\mathbf{v}$
+$\mathbf{w}_1=proj_{\mathbf{v}}(\mathbf{u})=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|\mathbf{v}\right\|^2}\mathbf{v}$
 
 - the vector component of \mathbf{u} orthogonal to \mathbf{v}
 $\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\mathbf{u}-\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|v\right\|^2}\mathbf{v}$
@@ -266,11 +266,6 @@ x_1y_2-x_2y_1
 
 ---
 
-# cross product property
-![](./img/cross_property.png)
-- just prove it in homework by the definition of cross product
----
-
 # cross product
 - the cross product of two vectors can be represented by the determinant
 $\mathbf{x}\times\mathbf{y}=\begin{vmatrix}
@@ -289,6 +284,12 @@ x_3 & 0 & -x_1 \\
 
 > notice that $[\mathbf{x}]$ is skew-symmetric, so its rank is odd
 actually, rank($[\mathbf{x}]$)=2
+
+---
+
+# cross product property
+![](./img/cross_property.png)
+- just prove it in homework by the definition of cross product
 
 ---
 
