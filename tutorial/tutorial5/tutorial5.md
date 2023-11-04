@@ -66,11 +66,18 @@ where $A_i$ is the matrix obtained from $A$ by replacing the $i$th column of $A$
 
 ---
 
+# determinant property
+
 find $A=\left | \begin{matrix}
 ax+by & ay+bz & az+bx \\
 ay+bz & az+bx & ax+by \\
 az+bx & ax+by & ay+bz  
 \end{matrix} \right |$
+
+---
+
+# determinant practice
+![](./img/mid_determinant.png)
 
 ---
 
@@ -131,6 +138,25 @@ $\left\|\mathbf{v}\right\|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
 - normalization
     $\mathbf{u}=\dfrac{\mathbf{v}}{\left\|\mathbf{v}\right\|}$
     get the unit vector $\mathbf{u}$: normailize $\mathbf{v}$
+
+---
+
+# other different norms*
+
+$p$ norm of a vector $\mathbf{v}=(v_1,\cdots,v_n)$
+$\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}$
+
+- $0$ norm:
+    $\left\|\mathbf{v}\right\|_0$ is the number of nonzero entries in $\mathbf{v}$
+
+- $1$ norm:
+    $\left\|\mathbf{v}\right\|_1=|v_1|+|v_2|+\cdots+|v_n|$
+
+- $2$ norm(Euclidean norm):
+    $\left\|\mathbf{v}\right\|_2=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
+
+- $\infty$ norm:
+    $\left\|\mathbf{v}\right\|_\infty=max\{|v_1|,|v_2|,\cdots,|v_n|\}$
 
 ---
 
@@ -306,6 +332,15 @@ $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\
 
 ---
 
+# exercise
+
+- $\mathbf{a}, \mathbf{b}, \mathbf{c}$ satisfy $\mathbf{a} + \mathbf{b} + \mathbf{c} = \textbf{0}$ and $\left\|\mathbf{a}\right\| = 3, \left\|\mathbf{b}\right\| = 5, \left\|\mathbf{c}\right\| = 7$.
+find the angle between $\mathbf{a}$ and $\mathbf{b}$
+
+- $\left\|\mathbf{a}\right\| = 2, \left\|\mathbf{b}\right\| = \sqrt{2}, \mathbf{a} \cdot \mathbf{b} = 2$.
+find $\left\|\mathbf{a}\times\mathbf{b}\right\|$
+
+---
 
 # representation of lines and planes
 - line
@@ -319,12 +354,15 @@ $n_1(x-x_0)+n_2(y-y_0)+n_3(z-z_0)=0$
 $\mathbf{n}=(n_1,n_2,n_3)$ is the normal vector of the plane
 $\mathbf{n}= \mathbf{v}\times\mathbf{w}$
 
+---
+
+# distance from a point to a line/plane
 
 ---
 
-# cross product
+# cross product on homogeneous coordinates*
 
-过平面上两点$p_1=(x_1,y_1)$,$p_2=(x_2,y_2)的
+过平面上两点$p_1=(x_1,y_1)$,$p_2=(x_2,y_2)$的
 
 齐次坐标: $p_1=(x_1,y_1,1)$,$p_2=(x_2,y_2,1)$
 直线的方向向量: $\mathbf{v}=\mathbf{p}_1\times\mathbf{p}_2$
@@ -336,7 +374,3 @@ $\mathbf{n}= \mathbf{v}\times\mathbf{w}$
 
 
 
----
-
-# determinant practice
-![](./img/mid_determinant.png)
