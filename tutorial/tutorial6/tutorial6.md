@@ -5,8 +5,8 @@ paginate: true
 
 ---
 
-# Linear Algebra Tutorial 
-2023.11.
+# Linear Algebra Tutorial6
+2023.11.14
 
 ---
 
