@@ -11,6 +11,24 @@ paginate: true
 ---
 
 # homework
+$A=\begin{bmatrix}
+1 & 0 & 1 \\
+0 & 2 & 0 \\
+-2 & 0 & 1
+\end{bmatrix}$
+- $(A^2-1)B=A+I$
+ $|B|=?$
+
+$\mathbf{v}=(2, -2, 2)$
+- $\left\|\mathbf{v}\right\|=?$
+
+---
+# arccos
+![h:12cm](./img/arccos.png)
+
+---
+
+# homework
 - bonus
 $A,B\in M_{3\times 3}$
 $A^2-AB-2B^2=A-2BA-B$
@@ -20,8 +38,6 @@ $B=\begin{bmatrix}
 1 & 3 & 2
 \end{bmatrix}$
 $det(A-B)\neq 0$
-
----
 
 ---
 
