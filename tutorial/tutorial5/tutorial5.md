@@ -280,6 +280,38 @@ $\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\
 
 ---
 
+# The geometry of linear systems
+
+- For linear system, $A\mathbf{x}=\mathbf{b}$
+$\mathbf{w}$ is a solution of $A\mathbf{x}=\mathbf{0}$(homogeneous system)
+$\mathbf{s}$ is a specific solution of $A\mathbf{x}=\mathbf{b}$
+
+Then every solution of $A\mathbf{x}=\mathbf{b}$ is of the form $\mathbf{v}=\mathbf{s}+\mathbf{w}$
+
+**important in the whole learning process of Linear Algebra**
+
+---
+
+# The geometry of linear systems
+- for the homogeneous system $A\mathbf{x}=\textbf{0}$
+
+- consider the $A$ as a sequence of row vectors,
+i.e. $A=\begin{bmatrix}
+\mathbf{r}_1 \\
+\mathbf{r}_2 \\
+\vdots \\
+\mathbf{r}_m
+\end{bmatrix}$
+
+- and $\mathbf{s}$ is a solution to the homogenous system
+
+Then we have $\forall i, \mathbf{r}_i\cdot\mathbf{s}=0$
+and $\sum\limits_{i=1}^m\mathbf{r}_i\cdot s_i =0$
+
+> linear independent
+
+---
+
 # cross product
 ![w:15cm](./img/cross1.png) ![w:14cm](./img/cross2.png) 
 
@@ -400,17 +432,56 @@ $\mathbf{n}=(a,b,c)$ is the normal vector of the plane
 
 ---
 
-# cross product on homogeneous coordinates*
+# homogeneous coordinates*
+- In 2D space, a point $p(x,y)$
 
-- In 2D space, two points
-$p_1=(x_1,y_1)$,$p_2=(x_2,y_2)$
+- its homogeneous coordinates
+$p(x,y,1)$
 
-- their homogeneous coordinates
-$p_1=(x_1,y_1,1)$,$p_2=(x_2,y_2,1)$
+- a vector $\mathbf{v}=(x,y)$
+its homogeneous coordinates is
+$\mathbf{v}=(x,y,0)$
 
-- then the line passing through $p_1$ and $p_2$:
-$\mathbf{v}=\mathbf{p}_1\times\mathbf{p}_2=(y_1-y_2,x_2-x_1,x_1y_2-x_2y_1)$ 
-$\mathbf{v}$ represents the line $y_1x+y_2y+x_1x=0$
+- a line $ax+by+c=0$
+its homogeneous coordinates is
+$\mathbf{v}=(a,b,c)$
 
+- benefit1:
+we can judge whether a point is on the line by $\mathbf{v}\cdot\mathbf{p}=0$
 
-If we have two lines $\mathbf{v}_1,\mathbf{v}_2$, then their intersection is $\mathbf{p}=\mathbf{v}_1\times\mathbf{v}_2$
+---
+
+# homogeneous coordinates*
+benefit2:
+- we can easily get the line crossing two points:
+$\mathbf{l}= \mathbf{p}\times\mathbf{q}$
+
+- we can easily get the intersection of two lines:
+$\mathbf{x}= \mathbf{l}\times\mathbf{m}$
+
+![](./img/homogenous.png)
+
+---
+
+# homogeneous coordinates*
+
+benefit3:
+we can easily transform a point in Euclidean space
+
+$\begin{bmatrix}
+p' \\
+1
+\end{bmatrix} = \begin{bmatrix}
+R & \mathbf{t} \\
+0 & 1
+\end{bmatrix} \begin{bmatrix}
+p \\
+1
+\end{bmatrix}$
+
+where $\begin{bmatrix}
+R & \mathbf{t} \\
+0 & 1
+\end{bmatrix}$ is the transformation matrix
+
+> https://zhuanlan.zhihu.com/p/625678401
