@@ -92,7 +92,7 @@ $\vdots$
 
 # Euclidean space
 
-- $\mathbb{R}^n$ n-dimensional Euclidean space
+- $\mathbb{R}^n$ n-dimensional Euclidean space(can be seen as ordered $n$-tuples)
   $\mathbf{v}\in\mathbb{R}^n$, $\mathbf{v}=(v_1,\cdots,v_n)$
 - **linear combination**
   $\mathbf{w} = k_1\mathbf{v}_1 + k_2\mathbf{v}_2 + \cdots + k_r\mathbf{v}_r$
@@ -103,7 +103,7 @@ $\vdots$
     $span\{\mathbf{v}_1,\cdots,\mathbf{v}_r\}=\{\mathbf{w}|\mathbf{w}=k_1\mathbf{v}_1 + k_2\mathbf{v}_2 + \cdots + k_r\mathbf{v}_r, k_1,\cdots,k_r\in\mathbb{R}\}$
 ---
 
-# linear independence*
+# linear independence
 
 - standard unit vector 标准单位向量
     there are $n$ standard unit vectors in $\mathbb{R}^n$
@@ -120,7 +120,7 @@ $\vdots$
 > unique represetation $\Leftrightarrow$ linearly independent
 ---
 
-# linear independence*
+# linear independence
 - $\mathbf{v}_1,\cdots,\mathbf{v}_r$ are linearly independent if the only solution of $k_1\mathbf{v}_1 + k_2\mathbf{v}_2 + \cdots + k_r\mathbf{v}_r=\mathbf{0}$ is $k_1=k_2=\cdots=k_r=0$
 - $\mathbf{v}_1,\cdots,\mathbf{v}_r$ are linearly dependent if and only if one of them is a linear combination of the others
 
@@ -137,7 +137,7 @@ $\left\|\mathbf{v}\right\|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
 
 - normalization
     $\mathbf{u}=\dfrac{\mathbf{v}}{\left\|\mathbf{v}\right\|}$
-    get the unit vector $\mathbf{u}$: normailize $\mathbf{v}$
+    get the **unit vector** $\mathbf{u}$: normailize $\mathbf{v}$
 
 ---
 
@@ -182,6 +182,7 @@ $p$-norm : $\left\|\mathbf{v}\right\|_p=\sqrt[p]{|v_1|^p+|v_2|^p+\cdots+|v_n|^p}
 - Minkowski's inequality(闵可夫斯基不等式)
 $\left\|\mathbf{x}+\mathbf{y}\right\|_p\leq\left\|\mathbf{x}\right\|_p+\left\|\mathbf{y}\right\|_p$
 when $p=2$: triangle inequality
+- $\left\|\mathbf{x}\right\|\geq 0, \left\|\mathbf{x}\right\|=0\Leftrightarrow \mathbf{x}=\mathbf{0}$
 - $\forall a, \left\|a\mathbf{x}\right\|=|a|\left\|\mathbf{x}\right\|$
 - all norm $f:\mathbb{R}^n\to \mathbb{R}$ are convex.
 
@@ -191,6 +192,12 @@ when $p=2$: triangle inequality
 
 # properties of norm*
 ![h:12cm](./img/norm.png)
+
+---
+
+# distance
+the Euclidean distance between $\mathbf{u}$ and $\mathbf{v}$
+$d(u,v)=d(u,v)=\left\|\mathbf{u}-\mathbf{v}\right\|=\sqrt{(u_1-v_1)^2+(u_2-v_2)^2+\cdots+(u_n-v_n)^2}$
 
 ---
 
@@ -206,17 +213,9 @@ when $p=2$: triangle inequality
 
 # triangle inequality
 
-- 
+- $d(\mathbf{u},\mathbf{v})\leq d(\mathbf{u},\mathbf{w})+d(\mathbf{w},\mathbf{v})$
 
-
-
-
-
----
-
-# distance
-the Euclidean distance between $\mathbf{u}$ and $\mathbf{v}$
-$d(u,v)=d(u,v)=\left\|\mathbf{u}-\mathbf{v}\right\|=\sqrt{(u_1-v_1)^2+(u_2-v_2)^2+\cdots+(u_n-v_n)^2}$
+- $\left\|\mathbf{u}+\mathbf{v}\right\|\leq\left\|\mathbf{u}\right\|+\left\|\mathbf{v}\right\|$
 
 ---
 
@@ -234,41 +233,41 @@ if $A_{n\times n}$, $\mathbf{v},\mathbf{w}\in\mathbb{R}^n$
 - $\mathbf{Av}\cdot\mathbf{w}=(\mathbf{Av})^T\mathbf{w}=\mathbf{v}^T\mathbf{A}^T\mathbf{w}=\mathbf{v}\cdot\mathbf{A}^T\mathbf{w}$
 - $\mathbf{v}\cdot\mathbf{Aw}=\mathbf{v}^T(\mathbf{A}\mathbf{w})=(\mathbf{v}^T\mathbf{A})\mathbf{w}=(\mathbf{A}\mathbf{v}^T)^T\mathbf{w}=\mathbf{A}^T\mathbf{v}\cdot\mathbf{w}$
 
+---
 
+# dot prodcut 
+![](./img/product.png)
+![](./img/product2.png)
 
+---
 
-
+- Theorem
+![](./img/theorem.png)
 
 ---
 
 # angle
 angle $\theta$ between two vectors $\mathbf{x},\mathbf{y}$ **$\leftarrow$ no zero vector**
-$cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{\sqrt{<\mathbf{x},\mathbf{x}>}\cdot\sqrt{<\mathbf{y},\mathbf{y}>}} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
+- $cos\theta = \dfrac{<\mathbf{x},\mathbf{y}>}{\sqrt{<\mathbf{x},\mathbf{x}>}\cdot\sqrt{<\mathbf{y},\mathbf{y}>}} = \dfrac{\mathbf{x}^T\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}$
 
 so $\mathbf{x}\cdot\mathbf{y}=\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|cos\theta$
 
-$\mathbf{x}\cdot \mathbf{y}=0\Leftrightarrow \mathbf{x}\perp \mathbf{y}$
+- $\mathbf{x}\cdot \mathbf{y}=0\Leftrightarrow \mathbf{x}\perp \mathbf{y}$
+
+- $\theta = \arccos(\dfrac{\mathbf{x}\cdot\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|})$
+Cauchy inequality:
+$|\dfrac{\mathbf{x}\cdot\mathbf{y}}{\left\|\mathbf{x}\right\|\left\|\mathbf{\mathbf{y}}\right\|}|\leq 1$
 
 ---
 
-# Orthogonality
+# Orthogonal
 
-...
+- $\mathbf{u},\mathbf{v}$ are orthogonal **iff** $\mathbf{u}\cdot\mathbf{v}=0$
 
 - orthogonal set
 $\mathbf{v}_1,\cdots,\mathbf{v}_n$ are orthogonal
 $\left\|\mathbf{v}_1+\cdots+\mathbf{v}_n\right\|= \left\|\mathbf{v}_1\right\|+\cdots+\left\|\mathbf{v}_n\right\|$
 proof in homework
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -279,11 +278,10 @@ $\mathbf{w}_1=proj_{\mathbf{v}}(\mathbf{u})=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\l
 - the vector component of \mathbf{u} orthogonal to \mathbf{v}
 $\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\mathbf{u}-\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|v\right\|^2}\mathbf{v}$
 
-
 ---
+
 # cross product
 ![w:15cm](./img/cross1.png) ![w:14cm](./img/cross2.png) 
-
 
 ---
 
@@ -334,13 +332,10 @@ z_1 & z_2 & z_3
 \end{vmatrix}$
 - $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\mathbf{y}\cdot(\mathbf{z}\times\mathbf{x})=\mathbf{z}\cdot(\mathbf{x}\times\mathbf{y})$
 - $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\mathbf{0}\Leftrightarrow \mathbf{x},\mathbf{y},\mathbf{z}$ are coplanar
-- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\times\mathbf{z}\right\|cos\theta$
-- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{y}\right\|\left\|\mathbf{z}\times\mathbf{x}\right\|cos\theta$
-- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\left\|\mathbf{z}\right\|\left\|\mathbf{x}\times\mathbf{y}\right\|cos\theta$
+- $\mathbf{x}\cdot(\mathbf{x}\times\mathbf{y})=\mathbf{y}\cdot(\mathbf{y}\times\mathbf{x})=0$
 
 - Lagrange’s identity
 $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\mathbf{v}\right\|^2-(\mathbf{u}\cdot\mathbf{v})^2$
-
 
 ---
 
@@ -348,9 +343,11 @@ $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\
 
 - parallelogram area
     平行四边形面积
-
+    $S=\bar{AB}*\bar{AC}sin\theta=\left\|\mathbf{AB}\times\mathbf{AC}\right\|$
 - volume of parallelepiped
     平行六面体体积
+    $V=S_{base}h=\left\|\mathbf{AB}\times\mathbf{AC}\right\|\cdot\left\|\mathbf{AD}\right\|cos\alpha=\mathbf{AD}\cdot(\mathbf{AB}\times\mathbf{AC})$
+
 ---
 
 # exercise (21-mid)
@@ -391,19 +388,29 @@ $\mathbf{n}= \mathbf{v}\times\mathbf{w}$
 
 # distance from a point to a line/plane
 
+- line(2-dimensional):
+from $P_0(x_0,y_0)$ to $ax+by+c=0$
+$d = \dfrac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}$
+$\mathbf{n}=(a,b)$ is the normal vector of the line
+
+- plane(3-dimensional):
+from $P_0(x_0,y_0,z_0)$ to $ax+by+cz+d=0$
+$d = \dfrac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}$
+$\mathbf{n}=(a,b,c)$ is the normal vector of the plane
+
 ---
 
 # cross product on homogeneous coordinates*
 
-过平面上两点$p_1=(x_1,y_1)$,$p_2=(x_2,y_2)$的
+- In 2D space, two points
+$p_1=(x_1,y_1)$,$p_2=(x_2,y_2)$
 
-齐次坐标: $p_1=(x_1,y_1,1)$,$p_2=(x_2,y_2,1)$
-直线的方向向量: $\mathbf{v}=\mathbf{p}_1\times\mathbf{p}_2$
+- their homogeneous coordinates
+$p_1=(x_1,y_1,1)$,$p_2=(x_2,y_2,1)$
 
-两条直线: $\mathbf{v}_1,\mathbf{v}_2$
-交点: $\mathbf{p}=\mathbf{v}_1\times\mathbf{v}_2$
-
-前提: 平面上
-
+- then the line passing through $p_1$ and $p_2$:
+$\mathbf{v}=\mathbf{p}_1\times\mathbf{p}_2=(y_1-y_2,x_2-x_1,x_1y_2-x_2y_1)$ 
+$\mathbf{v}$ represents the line $y_1x+y_2y+x_1x=0$
 
 
+If we have two lines $\mathbf{v}_1,\mathbf{v}_2$, then their intersection is $\mathbf{p}=\mathbf{v}_1\times\mathbf{v}_2$
