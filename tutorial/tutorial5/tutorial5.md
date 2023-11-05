@@ -477,7 +477,7 @@ $\mathbf{x}= \mathbf{l}\times\mathbf{m}$
 
 ![](./img/homogenous.png)
 
----
+--- 
 
 # homogeneous coordinates*
 
