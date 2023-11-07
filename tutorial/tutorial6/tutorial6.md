@@ -10,3 +10,7 @@ paginate: true
 
 ---
 
+# determinant practice
+![](./img/mid_determinant.png)
+
+---
