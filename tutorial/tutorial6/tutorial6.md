@@ -11,7 +11,8 @@ paginate: true
 ---
 
 # homework
-
+- about cross product 
+    is applicable **only** to vectors in 3-space
 
 
 ---
