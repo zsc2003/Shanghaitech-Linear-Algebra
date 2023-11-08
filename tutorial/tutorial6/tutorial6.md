@@ -10,15 +10,14 @@ paginate: true
 
 ---
 
-# determinant practice
-![](./img/mid_determinant.png)
-
----
-
 # homework
 
 
 
+---
+
+# determinant practice
+![](./img/mid_determinant.png)
 
 ---
 
@@ -113,3 +112,32 @@ R & \mathbf{t} \\
 \end{bmatrix}$ is the transformation matrix
 
 > https://zhuanlan.zhihu.com/p/625678401
+
+---
+
+# Eucledian space $\to$ Vector space
+
+
+
+---
+
+# zero space
+
+
+---
+
+# subspace
+
+
+---
+
+# span
+
+---
+
+# linear independence
+
+
+---
+
+
