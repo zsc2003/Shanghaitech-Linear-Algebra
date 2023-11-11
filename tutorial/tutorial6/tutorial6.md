@@ -15,6 +15,11 @@ paginate: true
     is applicable **only** to vectors in 3-space
 
 
+
+
+
+
+
 ---
 
 # determinant practice
