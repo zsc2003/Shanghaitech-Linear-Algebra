@@ -123,13 +123,18 @@ R & \mathbf{t} \\
 
 # Eucledian space $\to$ Vector space
 $\mathbb{R}^n\to V$
-the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$ 
+the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
+
+- Actually, 
 
 ---
 
 # property of vector space
 
 ![](./img/property_10.png)
+
+If and only if the $10$ conditions are satisfied, then $V$ is a vector space.
+> compare with the properties of Euclidean space
 
 ---
 
