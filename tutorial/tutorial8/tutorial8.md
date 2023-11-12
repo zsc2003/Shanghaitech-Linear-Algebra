@@ -5,8 +5,10 @@ paginate: true
 
 ---
 
-# Linear Algebra Tutorial 
-2023.11.
+# Linear Algebra Tutorial8
+# midterm review
+
+2023.11.27
 
 ---
 
