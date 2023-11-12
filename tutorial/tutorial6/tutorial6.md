@@ -122,8 +122,14 @@ R & \mathbf{t} \\
 ---
 
 # Eucledian space $\to$ Vector space
+$\mathbb{R}^n\to V$
+the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$ 
 
+---
 
+# property of vector space
+
+![](./img/property_10.png)
 
 ---
 
