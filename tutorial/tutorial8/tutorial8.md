@@ -26,6 +26,13 @@ paginate: true
 
 ---
 
+# 一些要强调的事情
+- **iff** $\Leftrightarrow$ if and only if $\Leftrightarrow$ 当且仅当, 
+$\Rightarrow$ 充分性, $\Leftarrow$ 必要性, 都要证
+或者全程使用$\Leftrightarrow$等价表述
+
+---
+
 # chapter 1
 - 
 - 

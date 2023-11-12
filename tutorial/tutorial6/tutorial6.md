@@ -14,11 +14,11 @@ paginate: true
 - about cross product 
     is applicable **only** to vectors in 3-space
 
+- the norm of a vector
+    $\left\|\mathbf{v}\right\|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
 
-
-
-
-
+- the projection of a vector
+    $proj_{\mathbf{u}}\mathbf{v}=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|\mathbf{u}\right\|^2}\mathbf{u}$
 
 ---
 
@@ -125,25 +125,48 @@ R & \mathbf{t} \\
 $\mathbb{R}^n\to V$
 the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
 
-- Actually, 
-
 ---
 
 # property of vector space
 
 ![](./img/property_10.png)
 
-If and only if the $10$ conditions are satisfied, then $V$ is a vector space.
+- If and only if the $10$ conditions are satisfied, then $V$ is a vector space.
+- we call every element in the vector space "vector"
 > compare with the properties of Euclidean space
 
 ---
 
-# zero space
+# property of vector space
 
+- $+$ is an abstract operation, it may not be the addition in Euclidean space
+    eg. we can define that $a+b=ab$
+- $-u$ is the inverse(negative) of $u$, it may have $-u\neq -1u$
+**but in vector space, $-u=-1u$**
+- the most important thing is the defination of "+", "-", "$0$"
+
+---
+
+# example of vector space
+- $\mathbb{R}^n$
+- $V=M_{m\times n}$
+    "+" is the addition of matrices, $\mathbf{0}$ is the zero matrix
+- all function $f:\mathbb{R}\to\mathbb{R}$ is the vector in $V=F(-\infty,+\infty)$
+- the set of all polynomials of degree $\leq n$
+    "+" the addtion for every coefficient
 
 ---
 
 # subspace
+> it is too complicated to prove its a vector space, so we consider the subspace
+
+
+- the intersection of two subspaces is also a subspace
+- the union of two subspaces is not necessarily a subspace(usually not)
+
+---
+
+# zero space
 
 
 ---
