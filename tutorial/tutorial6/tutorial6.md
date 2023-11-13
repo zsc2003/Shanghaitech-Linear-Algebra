@@ -157,8 +157,7 @@ the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
 ---
 
 # theorem of vector space
-![Alt text](image.png)
-
+![](img/theorem.png)
 
 ---
 
@@ -171,18 +170,51 @@ $V$ is a vector space, $W$ is a subset of $V$  **iff**
 - $W$ is closed under scalar multiplication
     $\forall \mathbf{u}\in W, \forall c\in \mathbb{R}, c\mathbf{u}\in W$
 
+$W$ is the subspace of $V$ with the defination of "+" and "$\cdot$"
 **$W$ is also a vector space**
+
+---
+
+# examples of subspace
+
+- $\mathbf{u}=(1,1,1)\in\mathbb{R}^3, \mathbf{v}=(1,1,0)\in\mathbb{R}^3, \textbf{0}=(0,0,0)\in\mathbb{R}^3$
+$W=\{k\mathbf{u}+c\mathbf{v},k\in\mathbb{R},c\in\mathbb{R}\}$
+$W$ is a subspace of $\mathbb{R}^3$
+
+- $W=\{A=M_{n\times n:A^T=A}\}$
+$W$ is a subspace of $M_{n\times n}$
+
+- $P_n \subset P_{\infty} \subset C^{\infty}(-\infty, \infty) \subset C^m(-\infty, \infty) \subset C^1(-\infty, \infty)$
+$\subset C(-\infty, \infty) \subset F(-\infty, \infty)$
+
+$P_n$ is the set of all polynomials of degree $\leq n$
+All these are subspaces of $F(-\infty, \infty)$
+
+---
+
+# examples of subspace
+
+- the set of all invertible matrices is **not** a subspace of $M_{n\times n}$
 
 ---
 
 # subspace
 
 - the intersection of two subspaces is also a subspace
+$W_1,\cdots,W_r$ are the subspaces of $V$, then $W_1\cap\cdots\cap W_r$ is also a subspace of $V$
 - the union of two subspaces is not necessarily a subspace(usually not)
 
 ---
 
 # zero space
+
+for all vector space $V$, $\{\mathbf{0}\}$ is a subspace of $V$
+- $\mathbf{0} + \mathbf{0} = \mathbf{0}$
+- $c\mathbf{0} = \mathbf{0}$ 
+
+---
+
+# linear combination
 
 
 ---
