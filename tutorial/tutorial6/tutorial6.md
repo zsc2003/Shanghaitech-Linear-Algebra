@@ -121,8 +121,8 @@ R & \mathbf{t} \\
 
 ---
 
-# Eucledian space $\to$ Vector space
-$\mathbb{R}^n\to V$
+# Eucledian space $\Rightarrow$ Vector space
+$\mathbb{R}^n\Rightarrow V$
 the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
 
 ---
@@ -137,13 +137,12 @@ the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
 
 ---
 
-# property of vector space
-
 - $+$ is an abstract operation, it may not be the addition in Euclidean space
     eg. we can define that $a+b=ab$
 - $-u$ is the inverse(negative) of $u$, it may have $-u\neq -1u$
 **but in vector space, $-u=-1u$**
 - the most important thing is the defination of "+", "-", "$0$"
+> the above defination may not be a vector space
 
 ---
 
@@ -157,9 +156,26 @@ the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
 
 ---
 
-# subspace
-> it is too complicated to prove its a vector space, so we consider the subspace
+# theorem of vector space
+![Alt text](image.png)
 
+
+---
+
+# subspace
+
+$V$ is a vector space, $W$ is a subset of $V$  **iff**
+
+- $W$ is closed under addition
+    $\forall \mathbf{u},\mathbf{v}\in W, \mathbf{u}+\mathbf{v}\in W$
+- $W$ is closed under scalar multiplication
+    $\forall \mathbf{u}\in W, \forall c\in \mathbb{R}, c\mathbf{u}\in W$
+
+**$W$ is also a vector space**
+
+---
+
+# subspace
 
 - the intersection of two subspaces is also a subspace
 - the union of two subspaces is not necessarily a subspace(usually not)
@@ -179,5 +195,8 @@ the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
 
 
 ---
+
+# Coordinates and basis
+
 
 
