@@ -215,15 +215,70 @@ for all vector space $V$, $\{\mathbf{0}\}$ is a subspace of $V$
 ---
 
 # linear combination
-
+$V$ is a vector space, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\in V\}$
+$W=\{c_1\mathbf{v}_1+\cdots+c_r\mathbf{v}_r,c_1,\cdots,c_r\in\mathbb{R}\}$
+- $W$ is all the linear combination of $\mathbf{v}_1,\cdots,\mathbf{v}_r$
+- $W$ is a subspace of $V$
+- **$W$ is the smallest subspace of $V$ containing $\mathbf{v}_1,\cdots,\mathbf{v}_r$**
+- We call $W=span(\mathbf{v}_1,\cdots,\mathbf{v}_r)$ or $W=span(S)$
+the span of $\mathbf{v}_1,\cdots,\mathbf{v}_r$
 
 ---
 
 # span
+$S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\in V\}$ is a subset of $V$
+$W=span(S)$ is the span of $S$
+- $W$ is the smallest subspace of $V$ containing $S$
+- $W$ is all the linear combination of $\mathbf{v}_1,\cdots,\mathbf{v}_r$
+
+---
+
+# span
+Let $e_i=(0,\cdots,0,1,0,\cdots,0)\in\mathbb{R}^n$, where $1$ is in the $i$-th position
+$S=\{e_1,\cdots,e_n\}$ is the standard basis of $\mathbb{R}^n$
+- $span(S)=\mathbb{R}^n$
+- $\forall \mathbf{v}\in\mathbb{R}^n, \mathbf{v}=v_1e_1+\cdots+v_ne_n$
+
+> what set of vectors can span $\mathbb{R}^n$?
+- can $\mathbf{v}_1=(1,1,2), \mathbf{v}_2=(1,0,1), \mathbf{v}_3=(2,1,3)$ span $\mathbb{R}^3$?
+- can $\mathbf{v}_1=(1,0,0), \mathbf{v}_2=(0,1,0)$ span $\mathbb{R}^3$? 
+- can $\mathbf{v}_1=(1,0,0), \mathbf{v}_2=(0,1,0), \mathbf{v}_3=(0,0,1), \mathbf{v}_4=(1,1,1)$ span $\mathbb{R}^3$? 
+> when will it have a unique solution?
 
 ---
 
 # linear independence
+$V$ is a vector space, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\in V\}$, $r\geq 2$
+
+If we say $S$ is linearly independent set, or say $\mathbf{v}_1,\cdots,\mathbf{v}_r$ are linearly independent vectors, we mean that
+- $\forall i, \mathbf{v}_i$ can not be represented by the linear combination of the other vectors in $S$
+
+
+---
+
+# linear independence
+The way we usually use to prove that $\mathbf{v}_1,\cdots,\mathbf{v}_r$ are linearly independent 
+
+- We call $S$ a linearly independent set **iff**
+$\exists c_1,\cdots,c_r\in\mathbb{R}$, 
+$c_1\mathbf{v}_1+\cdots+c_r\mathbf{v}_r=\mathbf{0}$
+only when $c_1=\cdots=c_r=0$
+
+> proof by contradiction
+WLOG, we usually set $\mathbf{v}_1$ can be represented by the linear combination of the other vectors.
+
+---
+# linear independence
+$S=\{\mathbf{e}_1,\cdots,\mathbf{e}_n\}$ in $\mathbb{R}^n$ is the standard basis of $\mathbb{R}^n$
+
+
+
+---
+# linear independence
+Let $c\in\mathbb{R}$, suppose that
+$p_1(x)=1-2x, p_2(x)=3+x-cx^2, p_3(x)=-1+3x^2,$$p_4(x)=1+2021x+2021^2x^2+2021^3x^3$ 
+Find $c$ s.t. $p_1,p_2,p_3,p_4$ are linearly independent
+
 
 
 ---
