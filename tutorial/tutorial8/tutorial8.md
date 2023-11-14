@@ -31,6 +31,31 @@ paginate: true
 $\Rightarrow$ 充分性, $\Leftarrow$ 必要性, 都要证
 或者全程使用$\Leftrightarrow$等价表述
 
+free variables
+eg. $x_3=s,x_4=r$
+**$s,r\in \mathbf{R}$**!
+
+- consistent 有解的
+- inconsistent 无解的
+- trival solution 平凡解(无解)
+- the symbol [] and || 
+  [] for matrix, || for determinant
+---
+# 一些要强调的事情
+
+- 注意公式不要记错了
+    - $\left\|\mathbf{v}\right\|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$ 不要忘记根号
+    - $\cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\left\|\mathbf{u}\right\|\left\|\mathbf{v}\right\|}$ 分母不要忘记开方
+    - $proj_{\mathbf{v}}\mathbf{u}=\frac{\mathbf{u}\cdot\mathbf{v}}{\left\|\mathbf{v}\right\|^2}\mathbf{v}$ 分母不要忘记平方,公式背不过的话可以自己考场推一下
+
+$A=\begin{bmatrix}
+1 & 0 & 1 \\
+0 & 2 & 0 \\
+-2 & 0 & 1
+\end{bmatrix}$
+- $A+I=?,A-I=?$ 注意$I$是单位矩阵,只有对角线上的元素为1!!!
+
+
 ---
 
 # chapter 1
