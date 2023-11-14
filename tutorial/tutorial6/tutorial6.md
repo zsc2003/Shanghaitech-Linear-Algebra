@@ -124,6 +124,7 @@ R & \mathbf{t} \\
 # Eucledian space $\Rightarrow$ Vector space
 $\mathbb{R}^n\Rightarrow V$
 the Euclidean space $\mathbb{R}^n$ is a special kind of vector space $V$
+> vector space is also called linear space
 
 ---
 
@@ -269,9 +270,9 @@ WLOG, we usually set $\mathbf{v}_1$ can be represented by the linear combination
 
 ---
 # linear independence
-$S=\{\mathbf{e}_1,\cdots,\mathbf{e}_n\}$ in $\mathbb{R}^n$ is the standard basis of $\mathbb{R}^n$
+- $S=\{\mathbf{e}_1,\cdots,\mathbf{e}_n\}$ in $\mathbb{R}^n$ is the standard basis of $\mathbb{R}^n$
 
-
+- $p_0(x)=1, p_1(x)=x, p_2(x)=x^2, \cdots, p_n(x)=x^n$ are linearly independent in $P_n$
 
 ---
 # linear independence
@@ -279,11 +280,60 @@ Let $c\in\mathbb{R}$, suppose that
 $p_1(x)=1-2x, p_2(x)=3+x-cx^2, p_3(x)=-1+3x^2,$$p_4(x)=1+2021x+2021^2x^2+2021^3x^3$ 
 Find $c$ s.t. $p_1,p_2,p_3,p_4$ are linearly independent
 
+---
+# linear independence's property
+$V$ is a vector space, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\in V\}$ is a subset if $V$
+$S$ is a linearly independent set **iff**
+every vector in $W=span(S)$ has an unique representation
 
+> proof by contradiction
+
+---
+# linear independence's property
+- Let $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\}$ be a subset of $\mathbb{R}^n$
+**If $r>n$, then $S$ is linearly dependent**
+
+proof:
+Let $k_1\mathbf{v}_1+\cdots+k_r\mathbf{v}_r=\mathbf{0}$, where $k_1,\cdots,k_r\in\mathbb{R}$
+Then the coefficient matrix is $A=\begin{bmatrix}
+v_{11} & \cdots & v_{1r} \\
+\vdots & \ddots & \vdots \\
+v_{n1} & \cdots & v_{nr}
+\end{bmatrix}$
+
+since $r>n$, which means the numbers of variables is more than the numbers of equations, then there must be a non-trivial solution, which means $S$ is linearly dependent
+
+---
+# Coordinates and basis
+$V$ is a finite-dimensional vector space, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\}$ is a subset of $V$
+If
+- $S$ is linearly independent
+- $V=span(S)$
+
+then we call $S$ a basis of $V$
+the number of vectors in $S$ is the dimension of $V$, denoted as $dim(V)$
+
+---
+# Coordinates and basis
+We have mentioned that
+$S=\{\mathbf{e}_1,\cdots,\mathbf{e}_n\}$ 
+$span(S)=\mathbb{R}^n$
+We can $S$ the standard basis of $\mathbb{R}^n$
 
 ---
 
 # Coordinates and basis
+Some equality relations
+$$S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}\subset \mathbb{R}^n\text{ is linearly independent}\Leftrightarrow span(S)=\mathbb{R}^n$$
+$$\Leftrightarrow S\text{ is a basis of }\mathbb{R}^n$$
+$$\Leftrightarrow A=[\mathbf{v}_1 \cdots \mathbf{v}_n]\text{is invertible}$$
 
+---
+# Coordinates and basis
 
+$S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}\subset \mathbb{R}^n$ is a basis of $\mathbb{R}^n$
+$\forall\mathbf{v}\in V$, $\exists c_1,\cdots,c_n\in\mathbb{R}$ s.t.
+$\mathbf{v}=c_1\mathbf{v}_1+\cdots+c_n\mathbf{v}_n$
 
+coordinate vector of $\mathbf{v}$ relative to $S$
+$(\mathbf{v})_S=(c_1,\cdots,c_n)$
