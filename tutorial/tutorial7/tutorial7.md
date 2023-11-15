@@ -6,7 +6,7 @@ paginate: true
 ---
 
 # Linear Algebra Tutorial 7
-2023.11.20
+2023.11.21
 
 ---
 
