@@ -11,7 +11,8 @@ paginate: true
 ---
 
 # homework
-
+- $P_n$ 所有次数$\leq n$的多项式的集合
+  $P_n=\{p(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n:a_1,\cdots,a_n\in\mathbb{R}\}$
 
 ---
 
