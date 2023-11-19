@@ -14,56 +14,21 @@ paginate: true
 - $P_n$ 所有次数$\leq n$的多项式的集合
   $P_n=\{p(x)=a_0+a_1x+a_2x^2+\cdots+a_nx^n:a_1,\cdots,a_n\in\mathbb{R}\}$
 
+- matrix has no Binomial Theorem
+e.g. $(A+B)^2=A^2+AB+BA+B^2$
+$AB$ may not equal to $BA$!!!
+
+- a small tip for hw7
+  $\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$
+  $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$
+  $\cos(2\alpha)=\cos^2\alpha-\sin^2\alpha=2\cos^2\alpha-1=1-2\sin^2\alpha$
 ---
 
-# the dimension of a vector space
-(defined in last tutorial)
-$V$ is a finite-dimensional vector space, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\}$ is a subset of $V$
-If
-- $S$ is linearly independent
-- $V=span(S)$
+# homework
 
-then we call $S$ a basis of $V$
-the number of vectors in $S$ is the dimension of $V$, denoted as $dim(V)$
-
----
-
-# the dimension of a vector space
-
-
-
-
----
-
-# Plus/Minus Theorem
-
-
----
-
-# Change of basis
-
-
-
----
-
-# Row space, Column space and Null space
-![](img/space_1.png)
-
----
-![](img/space2.png)
-
----
-# Rank, Nullity and Fundamental Matrix Spaces
-
-
-
-
-
-
-
-
-
-
+- for the problem E:
+![](./img/hw6.png)
+$A\mathbf{x}=\mathbf{0}\not\Rightarrow \mathbf{x}=\mathbf{0}$
 
 ---
 
@@ -127,7 +92,9 @@ $A=\begin{bmatrix}
 - 行列式按行/列的展开时:
   $|A|=\sum\limits_{i=1}^na_{ij}C_{ij}$
   注意$C_{ij}$是$a_{ij}$的**代数余子式**,有一个$(-1)^{i+j}$!!!
-  
+- 矩阵没有二项式定理
+e.g. $(A+B)^2=A^2+AB+BA+B^2$
+
 ---
 
 # review list 复习清单
@@ -143,3 +110,100 @@ $A=\begin{bmatrix}
   - 基、维数、基变换
   - 行空间、 列空间、 零空间
   - 矩阵的秩、零度、 矩阵基本空间
+
+---
+
+# the dimension of a vector space
+(defined in last tutorial)
+$V$ is a finite-dimensional vector space, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_r\}$ is a subset of $V$
+If
+- $S$ is linearly independent
+- $V=span(S)$
+
+then we call $S$ a basis of $V$
+the number of vectors in $S$ is the dimension of $V$, denoted as $dim(V)$
+
+---
+
+# coordinate 
+$S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}\subset \mathbb{R}^n$ is a basis of $\mathbb{R}^n$
+$\forall\mathbf{v}\in V$, $\exists c_1,\cdots,c_n\in\mathbb{R}$ s.t.
+$\mathbf{v}=c_1\mathbf{v}_1+\cdots+c_n\mathbf{v}_n$
+
+coordinate vector of $\mathbf{v}$ relative to $S$
+$(\mathbf{v})_S=(c_1,\cdots,c_n)$
+> the coordinate is actually the coefficient of the linear combination
+
+---
+
+# the dimension of a vector space
+
+The dimension of $V$ is the number of vectors in any basis of $V$
+
+- $\dim(\mathbb{R}^n)=n$
+- $\dim (P_n)=n+1$
+- $\dim (M_{m\times n})=\dim(\mathbb{R}^{mn})=mn$
+- for zero space $\dim(\{\mathbf{0}\})=0$
+
+---
+
+# Plus/Minus Theorem
+
+
+---
+
+# Change of basis
+
+$V$ is the vector space, $B,B'$ are two bases of $V$
+- $B=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$
+- $B'=\{\mathbf{v}_1',\cdots,\mathbf{v}_n'\}$
+If we have $(\mathbf{v})_B=(c_1,\cdots,c_n)$ 
+how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
+
+---
+
+# Change of basis
+
+
+
+
+- transition matrix(过渡矩阵)
+  $P=\begin{bmatrix}
+  \mathbf{v}_1' & \cdots & \mathbf{v}_n'
+  \end{bmatrix}$
+  $P$ is invertible, $P^{-1}$ is called the transition matrix from $B$ to $B'$
+
+- transition matrix from $B$ to $B'$
+  $P_{B\to B'}$ or $P_{B'\leftarrow B}$
+- transition matrix from $B'$ to $B$
+  $P_{B'\to B}$ or $P_{B\leftarrow B'}$
+> notice that the defination of the transition matrix may be different with some of the Chinese textbooks!!
+
+---
+
+# Change of basis
+- We can represent the transition matrix as  $P_{B\to B'}$ or $P_{B'\leftarrow B}$
+
+- $(v)_{B'}=P_{B'\leftarrow B}(v)_{B}$
+
+
+- method to get the transition matrix
+  $[B'|B]\Rightarrow [I|P_{B'\leftarrow B}]$
+
+---
+
+# Row space, Column space and Null space
+- row space 行空间 column space 列空间
+null space 零空间 left null space 左零空间
+![](img/space_1.png)
+
+---
+![](img/space2.png)
+
+---
+
+# Rank, Nullity and Fundamental Matrix Spaces
+
+
+
+
