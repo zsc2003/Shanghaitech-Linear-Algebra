@@ -175,8 +175,15 @@ $V$ is a vector space, $S\subset V$
 ---
 
 # coordinate
+$n\geq 1, \dim(V)=n, S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$ is a basis of $V$
 
+- for any vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_r\}\subset V$
+$M$ is an independent set $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_r]_S$ are independent set
+> proof: set $[\mathbf{v}_i]=(a_{i1},\cdots,a_{in})$, then $\mathbf{v}_i=a_{i1}\mathbf{v}_1+\cdots+a_{in}\mathbf{v}_n$
 
+- for vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_n\}\subset V$
+  $M$ is the basis of $V\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is the basis of $\mathbb{R}^n$
+  $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is the standard basis of $\mathbb{R}^n$
 
 
 
