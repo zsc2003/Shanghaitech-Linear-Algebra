@@ -19,7 +19,8 @@ paginate: true
 ---
 
 
-
+关于期中考试
+从tutorial7的最后粘过来
 
 
 
@@ -30,10 +31,6 @@ paginate: true
 
 
 ---
-关于期中考试
-从tutorial7的最后粘过来
-
-
 
 # Row space, Column space and Null space
 - row space 行空间 column space 列空间

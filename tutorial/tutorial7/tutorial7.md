@@ -18,6 +18,8 @@ paginate: true
 e.g. $(A+B)^2=A^2+AB+BA+B^2$
 $AB$ may not equal to $BA$!!!
 
+- about $\vec{v}$ and $\mathbf{v}$
+
 - a small tip for hw7
   $\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$
   $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$
@@ -191,12 +193,12 @@ $M$ is an independent set $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}
 ![](./img/example.png)
 
 ---
-# basis theorem
+# basis' theorem
 $V$ is a vector space,$\dim(V)=n$, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_m\}\subset V$
 - $span(S)=V, m>n$, then we can delete some of the vectors in $S$ to get a basis of $V$
 - if $S$ is a linear independent set, $m<n$, then we can add some vectors to $S$ to get a basis of $V$
 ---
-# basis theorem
+# basis' theorem
 $V$ is a vector space, $\dim(V)=n$, $W\subset V$ is a subspace.
 - let $m=\dim(W)$, then $m\leq n$
 - $W=V$ **iff** $m=n$
@@ -210,6 +212,7 @@ $V$ is the vector space, $B,B'$ are two bases of $V$
 - $B'=\{\mathbf{v}_1',\cdots,\mathbf{v}_n'\}$
 If we have $(\mathbf{v})_B=(c_1,\cdots,c_n)$ 
 how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
+> as we known that $[\mathbf{v}]_B, [\mathbf{v}]_{B'}$ has the unique expression
 
 ---
 
@@ -218,16 +221,14 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
 
 
 
-- transition matrix(过渡矩阵)
-  $P=\begin{bmatrix}
-  \mathbf{v}_1' & \cdots & \mathbf{v}_n'
-  \end{bmatrix}$
+- transition matrix(过渡矩阵) $P$
   $P$ is invertible, $P^{-1}$ is called the transition matrix from $B$ to $B'$
 
 - transition matrix from $B$ to $B'$
   $P_{B\to B'}$ or $P_{B'\leftarrow B}$
 - transition matrix from $B'$ to $B$
   $P_{B'\to B}$ or $P_{B\leftarrow B'}$
+- $P_{B\leftarrow B'}P_{B'\leftarrow B}=I$
 > notice that the defination of the transition matrix may be different with some of the Chinese textbooks!!
 
 ---
@@ -235,7 +236,8 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
 # Change of basis
 - We can represent the transition matrix as  $P_{B\to B'}$ or $P_{B'\leftarrow B}$
 
-- $(v)_{B'}=P_{B'\leftarrow B}(v)_{B}$
+- $[v]_{B'}=P_{B'\leftarrow B}[v]_{B}$
+- $[v]_{B}=P_{B\leftarrow B'}[v]_{B'}$
 
 
 - method to get the transition matrix
@@ -243,6 +245,5 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
 
 ---
 
-
-
-
+# example of transition matrix
+![](./img/transition.png)
