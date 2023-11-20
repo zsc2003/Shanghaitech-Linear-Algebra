@@ -147,11 +147,42 @@ The dimension of $V$ is the number of vectors in any basis of $V$
 
 ---
 
-# Plus/Minus Theorem
+# dimension and basis
+$S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$
+- $W=span(S)$, then $S$ is a basis of $W$
+- if $S$ is a linear independent set
+  $\dim(W)=\dim(span(S))=|S|=n$
 
+---
+# dimension and basis
+$S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$ be the basis of $V$
+- notice that $S$ is a independent set
+- if $m>n$, then $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_m\}$ must be a **linear dependent** set
+- if $m<n$, then $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_m\}$ must **not span** $V$
+$\Downarrow$
+- If $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$, $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_m\}$ are basis of $V$, then $n=m$
 
 ---
 
+# Plus/Minus Theorem
+$V$ is a vector space, $S\subset V$
+- If $S$ is an independent set, and $\mathbf{v}\in V, \mathbf{v}\not\in S$, then $S\cup\{\mathbf{v}\}$ is also an **independent set**
+> proof by contradiction, suppose that $S\cup\{\mathbf{v}\}$ is linear dependent $\Rightarrow\mathbf{v}=span(S)$
+
+- If $\mathbf{v}\in S$, and $\mathbf{v}$ can be written as a linear combination of other vectors in $S$, then $span(S-\mathbf{v})=span(S)$
+> $\mathbf{v}\in S$, WTOG, take $\mathbf{v}=v_1$, consider $\forall\mathbf{w}\in span(S)$, can be writen as linear combination of $\mathbf{v}_2,\cdots,\mathbf{v}_n$
+
+---
+
+# coordinate
+
+
+
+
+
+
+
+---
 # Change of basis
 
 $V$ is the vector space, $B,B'$ are two bases of $V$
