@@ -177,19 +177,32 @@ $V$ is a vector space, $S\subset V$
 # coordinate
 $n\geq 1, \dim(V)=n, S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$ is a basis of $V$
 
-- for any vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_r\}\subset V$
+- $1.$ for any vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_r\}\subset V$
 $M$ is an independent set $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_r]_S$ are independent set
 > proof: set $[\mathbf{v}_i]=(a_{i1},\cdots,a_{in})$, then $\mathbf{v}_i=a_{i1}\mathbf{v}_1+\cdots+a_{in}\mathbf{v}_n$
 
-- for vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_n\}\subset V$
+- $2.$ for vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_n\}\subset V$
   $M$ is the basis of $V\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is the basis of $\mathbb{R}^n$
   $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is the standard basis of $\mathbb{R}^n$
-
-
-
-
+> from $1.$, we know that $M$ is independent $\Rightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is independent, so we just need to prove that $span\{[\mathbf{w}_1]_S,\cdots,[\mathbf{w}_n]_S\}=\mathbb{R}^n$
 
 ---
+# example
+![](./img/example.png)
+
+---
+# basis theorem
+$V$ is a vector space,$\dim(V)=n$, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_m\}\subset V$
+- $span(S)=V, m>n$, then we can delete some of the vectors in $S$ to get a basis of $V$
+- if $S$ is a linear independent set, $m<n$, then we can add some vectors to $S$ to get a basis of $V$
+---
+# basis theorem
+$V$ is a vector space, $\dim(V)=n$, $W\subset V$ is a subspace.
+- let $m=\dim(W)$, then $m\leq n$
+- $W=V$ **iff** $m=n$
+
+---
+
 # Change of basis
 
 $V$ is the vector space, $B,B'$ are two bases of $V$
@@ -229,18 +242,6 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
   $[B'|B]\Rightarrow [I|P_{B'\leftarrow B}]$
 
 ---
-
-# Row space, Column space and Null space
-- row space 行空间 column space 列空间
-null space 零空间 left null space 左零空间
-![](img/space_1.png)
-
----
-![](img/space2.png)
-
----
-
-# Rank, Nullity and Fundamental Matrix Spaces
 
 
 
