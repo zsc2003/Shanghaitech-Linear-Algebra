@@ -16,7 +16,6 @@ paginate: true
 
 
 
----
 
 ---
 
@@ -98,6 +97,88 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
   - 基、维数、基变换
   - 行空间、 列空间、 零空间
   - 矩阵的秩、零度、 矩阵基本空间
+
+
+---
+
+# Plus/Minus Theorem
+$V$ is a vector space, $S\subset V$
+- If $S$ is an independent set, and $\mathbf{v}\in V, \mathbf{v}\not\in S$, then $S\cup\{\mathbf{v}\}$ is also an **independent set**
+> proof by contradiction, suppose that $S\cup\{\mathbf{v}\}$ is linear dependent $\Rightarrow\mathbf{v}=span(S)$
+
+- If $\mathbf{v}\in S$, and $\mathbf{v}$ can be written as a linear combination of other vectors in $S$, then $span(S-\mathbf{v})=span(S)$
+> $\mathbf{v}\in S$, WLOG, take $\mathbf{v}=v_1$, consider $\forall\mathbf{w}\in span(S)$, can be writen as linear combination of $\mathbf{v}_2,\cdots,\mathbf{v}_n$
+
+---
+
+# coordinate
+$n\geq 1, \dim(V)=n, S=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$ is a basis of $V$
+
+- $1.$ for any vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_r\}\subset V$
+$M$ is an independent set $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_r]_S$ are independent set
+> proof: set $[\mathbf{v}_i]=(a_{i1},\cdots,a_{in})$, then $\mathbf{v}_i=a_{i1}\mathbf{v}_1+\cdots+a_{in}\mathbf{v}_n$
+
+- $2.$ for vector set $M=\{\mathbf{w}_1,\cdots,\mathbf{w}_n\}\subset V$
+  $M$ is the basis of $V\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is the basis of $\mathbb{R}^n$
+  $\Leftrightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is the standard basis of $\mathbb{R}^n$
+> from $1.$, we know that $M$ is independent $\Rightarrow$ $[\mathbf{v}_1]_S,\cdots,[\mathbf{v}_n]_S$ is independent, so we just need to prove that $span\{[\mathbf{w}_1]_S,\cdots,[\mathbf{w}_n]_S\}=\mathbb{R}^n$
+
+---
+# example
+![](./img/example.png)
+
+---
+# basis' theorem
+$V$ is a vector space,$\dim(V)=n$, $S=\{\mathbf{v}_1,\cdots,\mathbf{v}_m\}\subset V$
+- $span(S)=V, m>n$, then we can delete some of the vectors in $S$ to get a basis of $V$
+- if $S$ is a linear independent set, $m<n$, then we can add some vectors to $S$ to get a basis of $V$
+---
+# basis' theorem
+$V$ is a vector space, $\dim(V)=n$, $W\subset V$ is a subspace.
+- let $m=\dim(W)$, then $m\leq n$
+- $W=V$ **iff** $m=n$
+
+---
+
+# Change of basis
+
+$V$ is the vector space, $B,B'$ are two bases of $V$
+- $B=\{\mathbf{v}_1,\cdots,\mathbf{v}_n\}$
+- $B'=\{\mathbf{v}_1',\cdots,\mathbf{v}_n'\}$
+If we have $(\mathbf{v})_B=(c_1,\cdots,c_n)$ 
+how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
+> as we known that $[\mathbf{v}]_B, [\mathbf{v}]_{B'}$ has the unique expression
+
+---
+
+# Change of basis
+
+- transition matrix(过渡矩阵) $P$
+  $P$ is invertible, $P^{-1}$ is called the transition matrix from $B$ to $B'$
+
+- transition matrix from $B$ to $B'$
+  $P_{B\to B'}$ or $P_{B'\leftarrow B}$
+- transition matrix from $B'$ to $B$
+  $P_{B'\to B}$ or $P_{B\leftarrow B'}$
+- $P_{B\leftarrow B'}P_{B'\leftarrow B}=I$
+> notice that the defination of the transition matrix may be different with some of the Chinese textbooks!!
+
+---
+
+# Change of basis
+- We can represent the transition matrix as  $P_{B\to B'}$ or $P_{B'\leftarrow B}$
+
+- $[v]_{B'}=P_{B'\leftarrow B}[v]_{B}$
+- $[v]_{B}=P_{B\leftarrow B'}[v]_{B'}$
+
+
+- method to get the transition matrix
+  $[B'|B]\Rightarrow [I|P_{B'\leftarrow B}]$
+
+---
+
+# example of transition matrix
+![](./img/transition.png)
 
 ---
 
