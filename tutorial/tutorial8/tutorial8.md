@@ -183,8 +183,22 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
 ---
 
 # Row space, Column space and Null space
-- row space 行空间 column space 列空间
-null space 零空间 left null space 左零空间
+- row space 行空间
+- column space 列空间
+- null space 零空间
+- left null space 左零空间
+
+
+
+
+
+
+
+
+
+---
+# Row space, Column space and Null space
+
 ![](img/space_1.png)
 
 ---
@@ -193,3 +207,23 @@ null space 零空间 left null space 左零空间
 ---
 
 # Rank, Nullity and Fundamental Matrix Spaces
+
+
+
+
+
+---
+# Geometry review
+- detail in tutorial 5
+
+- 平面的一般式
+$Ax+By+Cz+D=0$
+
+- 平面的法向量
+  $\mathbf{n}=(A,B,C)$
+
+- 空间中一点$(x_0,y_0,z_0)$到平面的距离
+  $d=\dfrac{|Ax_0+By_0+Cz_0+D|}{\sqrt{A^2+B^2+C^2}}$
+
+- 过空间内一点$(x_0,y_0,z_0)$, 法向量为$\mathbf{v}=(a,b,c)$ 的平面的方程
+  $a(x-x_0)+b(y-y_0)+c(z-z_0)=0$
