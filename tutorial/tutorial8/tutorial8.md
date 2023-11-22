@@ -183,23 +183,25 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
 ---
 
 # Row space, Column space and Null space
+$A$ is a $m\times n$ matrix
 - row space 行空间
+  $row(A)=span\{\mathbf{r}_1,\cdots,\mathbf{r}_m\}$
+
 - column space 列空间
+  $col(A)=span\{\mathbf{c}_1,\cdots,\mathbf{c}_n\}$
 - null space 零空间
-- left null space 左零空间
+  $null(A)=\{\mathbf{x}\in\mathbb{R}^n:A\mathbf{x}=\mathbf{0}\}$
+- left null space 左零空间 
+  $null(A^T)=\{\mathbf{x}\in\mathbb{R}^m:A^T\mathbf{x}=\mathbf{0}\}$
 
-
-
-
-
-
-
-
+> 行空间和零空间互为正交补
+> 列空间和左零空间互为正交补
 
 ---
 # Row space, Column space and Null space
 
 ![](img/space_1.png)
+> 正交: $col(A)\perp null(A)$, 补: $col(A)+null(A)=\mathbb{R}^n$
 
 ---
 ![](img/space2.png)
