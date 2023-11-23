@@ -44,7 +44,7 @@ eg. $x_3=s,x_4=r$
 
 - consistent 有解的
 - inconsistent 无解的
-- trival solution 平凡解(无解)
+- trival solution 平凡解(零解)
 - the symbol [] and || 
   [] for matrix, || for determinant
 
@@ -194,6 +194,10 @@ $A$ is a $m\times n$ matrix
 - left null space 左零空间 
   $null(A^T)=\{\mathbf{x}\in\mathbb{R}^m:A^T\mathbf{x}=\mathbf{0}\}$
 
+---
+
+# Fundamental Matrix Spaces
+![](./img/fundamental.png)
 > 行空间和零空间互为正交补
 > 列空间和左零空间互为正交补
 
@@ -207,12 +211,26 @@ $A$ is a $m\times n$ matrix
 ![](img/space2.png)
 
 ---
+# Null space
+For a linear system $A\mathbf{x}=\mathbf{b}$
+We can write the solutions as 
+$\mathbf{s}=\mathbf{s}_0+c_1\mathbf{v}_1+\cdots+c_k\mathbf{v}_k$
+where $\mathbf{s}_0$ is a particular solution, $\mathbf{v}_1,\cdots,\mathbf{v}_k$ is the basis of the null space of $A$
 
-# Rank, Nullity and Fundamental Matrix Spaces
+- $\mathbf{s}_0:$ 特解
+- $Null(A)=span\{\mathbf{v}_1,\cdots,\mathbf{v}_k\}$
+  so $\mathbf{v}_1,\cdots,\mathbf{v}_k$ are the basis of the null space of $A$
 
+---
+# Rank, Nullity
 
+- $rank(A)=dim(row(A))=dim(col(A))$
+  $A$ 的秩 = A 的行阶梯矩阵的首一个数
+  $\Rightarrow rank(A)\leq\min(n,m)$
 
-
+- $rank(A)$ 可看作行阶梯矩阵的首一(非零行/主元) 个数
+  $nullity(A)=dim(Null(A))$ 可看作自由元的个数
+  $\Rightarrow rank(A)+nullity(A)=n$
 
 ---
 # Geometry review
