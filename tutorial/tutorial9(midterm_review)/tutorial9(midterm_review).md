@@ -97,15 +97,14 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 
 ---
 
-# chapter 1
+# chapter 1 线性方程组
 - 
 - 
 - 
 
 ---
 
-# coeffcient matrix(系数矩阵) & 
-# augmented matrix(增广矩阵)
+## coeffcient matrix(系数矩阵) & augmented matrix(增广矩阵)
 
 ![](./img/coeffcient_matrix.png) ![](./img/augmented_matrix.png)
 
@@ -113,7 +112,7 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 
 ---
 
-# 初等行变换
+## 初等行变换
 - 交换两行
 - 用一个非零常数乘以某一行
 - 用一个非零常数乘以某一行，然后加到另一行上
@@ -133,14 +132,14 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 
 ---
 
-# Gauss elimination
+## Gauss elimination
 1. no solution
 2. fixed solution
 3. infinite solutions
 
 ---
 
-# leading variable & free variable
+## leading variable & free variable
 
 $B$ is an augmented matrix of a linear system, its row echelon form is $\tilde{B}$
 
@@ -165,14 +164,14 @@ The unknowns corresponding to the leading 1 in the rows that are not 0 in $\tild
 
 ---
 
-# chapter 2
+# chapter 2 行列式
 - 行列式的定义
 - 行列式的性质
 - 行列式的计算
 
 ---
 
-# 行列式的定义
+## 行列式的定义
 
 - 作用于方阵$A\in M_{n\times n}$上的函数
     $det:M_{n\times n}\rightarrow \mathbb{R}$
@@ -199,10 +198,14 @@ $|A|=a_{11}a_{22}-a_{12}a_{21}$
 
 ---
 
-# chapter 3
+# chapter 3 欧氏空间
+-
+-
+-
 
+---
 
-
+## $\mathbb{R}^n$ (n维欧氏空间)
 
 
 
@@ -227,14 +230,13 @@ $|A|=a_{11}a_{22}-a_{12}a_{21}$
 
 ---
 
-
-# chapter 4
+# chapter 4 向量空间
 -
 -
 -
 
 ---
 
-# Equivalent expression
+## Equivalent expression
 $A\in M_{n\times n}$
 ![](./img/Equivalent.png)
