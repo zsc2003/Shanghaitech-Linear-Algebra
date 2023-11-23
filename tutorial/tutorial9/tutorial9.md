@@ -226,5 +226,12 @@ The unknowns corresponding to the leading 1 in the rows that are not 0 in $\tild
 
 
 # chapter 4
+-
+-
+-
 
+---
 
+# Equivalent expression
+$A\in M_{n\times n}$
+![](./img/Equivalent.png)

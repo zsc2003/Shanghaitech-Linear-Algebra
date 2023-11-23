@@ -16,8 +16,7 @@ paginate: true
 
 
 
-
-
+---
 
 # Plus/Minus Theorem
 $V$ is a vector space, $S\subset V$
@@ -159,6 +158,9 @@ where $\mathbf{s}_0$ is a particular solution, $\mathbf{v}_1,\cdots,\mathbf{v}_k
 
 ---
 
+# Equivalent expression
+$A\in M_{n\times n}$
+![](./img/Equivalent.png)
 
 ---
 
