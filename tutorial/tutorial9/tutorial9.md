@@ -95,21 +95,6 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
   - 行空间、 列空间、 零空间
   - 矩阵的秩、零度、 矩阵基本空间
 
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 # chapter 1
@@ -181,7 +166,25 @@ The unknowns corresponding to the leading 1 in the rows that are not 0 in $\tild
 ---
 
 # chapter 2
--
+- 行列式的定义
+- 行列式的性质
+- 行列式的计算
+
+---
+
+# 行列式的定义
+
+- 作用于方阵$A\in M_{n\times n}$上的函数
+    $det:M_{n\times n}\rightarrow \mathbb{R}$
+
+- 记作$|A|$或者$\det(A)$
+
+- 特别的: 二阶行列式:
+$A=\begin{bmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{bmatrix}$
+$|A|=a_{11}a_{22}-a_{12}a_{21}$
 
 
 
