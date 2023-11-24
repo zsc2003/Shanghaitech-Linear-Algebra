@@ -70,7 +70,7 @@ how could we find $(\mathbf{v})_{B'}=(c_1',\cdots,c_n')$?
 
 # Change of basis
 
-- transition matrix(过渡矩阵) $P$
+- transition matrix(过渡矩阵/转移矩阵) $P$
   $P$ is invertible, $P^{-1}$ is called the transition matrix from $B$ to $B'$
 
 - transition matrix from $B$ to $B'$
