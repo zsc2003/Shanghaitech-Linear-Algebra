@@ -121,44 +121,51 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 
 ## row echelon form(行阶梯矩阵)
 - leading 1(首1/主1/主元......)
-- Any row in the matrix that is 0 must be below the row that is not 0
-- upper row's leading 1 must be to the left of the lower row's leading 1
+- $0$ 行必须在非零行的下面
+- leading 1 的列必须在下一行的leading 1 的左边
 
 ## reduced row echelon form(简化行阶梯矩阵)
 
-- The leading 1 contained in any row of the matrix that is not 0 is the only term in the column that is not 0
+- 首1所在的列的其他元素都为0
 
 ---
 
-## Gauss elimination
-1. no solution
-2. fixed solution
-3. infinite solutions
+## Gauss elimination 高斯消元
+1. no solution 无解
+2. 有解 
+    1. unique solution 唯一解
+    2. infinite solutions 无穷多解
 
 ---
 
-## leading variable & free variable
+## leading variable & free variable 主元 & 自由元
 
-$B$ is an augmented matrix of a linear system, its row echelon form is $\tilde{B}$
+增广矩阵$B$的行阶梯矩阵为$\tilde{B}$
+主元: $\tilde{B}$中的leading 1对应的元素
+自由元: $\tilde{B}$中的非主元对应的元素
 
-The unknowns corresponding to the leading 1 in the rows that are not 0 in $\tilde{B}$ are called the **leading variables** of the system of equations, and all the unknowns other than the leading variables are called the **free variables** of the system of equations.
+---
 
+## 矩阵运算
+- 矩阵加法
+- 矩阵乘法
 
+---
 
+## 矩阵求逆
+1. 伴随矩阵 $A^*$, $adj(A)$
 
-
-
-
-
-
-
-
-
-
-
-
+2. $[A|I]\Rightarrow [I|A^{-1}]$
 
 
+---
+
+## 特殊矩阵
+
+- 对角矩阵
+- 上三角矩阵
+- 下三角矩阵
+- 对称矩阵
 
 ---
 
@@ -184,13 +191,13 @@ a_{21} & a_{22}
 $|A|=a_{11}a_{22}-a_{12}a_{21}$
 
 
+---
 
+## 行列式的性质
 
+---
 
-
-
-
-
+## 行列式的计算
 
 
 
@@ -206,34 +213,64 @@ $|A|=a_{11}a_{22}-a_{12}a_{21}$
 ## $\mathbb{R}^n$ (n维欧氏空间)
 
 
+---
+
+## 范数、内积、距离
 
 
 
+---
 
+## 正交、叉乘
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
+## 欧式几何
 
 
 
 ---
 
 # chapter 4 向量空间
+- 向量空间
 - 子空间
 - 线性相关、线性无关
 - 基、维数、基变换
 - 行空间、 列空间、 零空间
 - 矩阵的秩、零化度、 矩阵基本空间
+
+---
+
+## 向量空间(线性空间) linear space/ vector space
+
+
+---
+
+## 子空间 subspace
+
+1. 线性空间(向量空间)子集
+2. 加法封闭性
+    $\mathbf{u}
+
+3. 数量积封闭性
+
+
+--- 
+
+## 线性相关、线性无关
+
+---
+
+## 基、维数、基变换
+
+---
+
+## 行空间、 列空间、 零空间
+
+
+---
+
+## 矩阵的秩、零化度、 矩阵基本空间
 
 ---
 
