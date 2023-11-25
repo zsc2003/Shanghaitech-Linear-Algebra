@@ -394,9 +394,7 @@ $\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\
 
 ---
 
-## 欧式几何
-
-scalar triple product 混合积(标量三重积)
+## 混合积(标量三重积)
 
 $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\begin{vmatrix}
 x_1 & x_2 & x_3 \\
@@ -486,19 +484,97 @@ $\mathbf{n}=(a,b,c)$ is the normal vector of the plane
 --- 
 
 ## 线性相关、线性无关
+$\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n\in V$
+- linear combination $\mathbf{v}$ 是$S=\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n$的线性组合
+  $\mathbf{v}=k_1\mathbf{v}_1+k_2\mathbf{v}_2+\cdots+k_n\mathbf{v}_n$
+
+- linearly dependent 线性相关
+  $\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n$中至少有一个向量可以表示为其他向量的线性组合
+
+- linearly independent 线性无关
+  $\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n$中没有一个向量可以表示为其他向量的线性组合
+  $\Leftrightarrow$ $k_1\mathbf{v}_1+k_2\mathbf{v}_2+\cdots+k_n\mathbf{v}_n=0$只有零解
 
 ---
 
-## 基、维数、基变换
+## 基、维数
+
+$S=\{\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n\}$是$V$的一个基
+
+- basis 基
+  $S$是$V$的一个基
+  $|S|=\dim(V)$
+
+- dimension 维数
+  $V$的一个基的元素个数
+
+基内的各个向量线性无关
+$A=[\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n]$
+$|A|\neq 0$
+
+---
+
+## 坐标
+- 同一个线性空间$V$可以有不同的基$B,B'$
+- 每一个向量在不同的基下都有自己的坐标
+  $[\mathbf{v}]_B$ 表示$\mathbf{v}$在基$B$下的坐标
+  $[\mathbf{v}]_{B'}$ 表示$\mathbf{v}$在基$B'$下的坐标
+
+---
+
+## 基变换
+  $B=[\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n]$, $B'= [\mathbf{v}_1',\mathbf{v}_2',\cdots,\mathbf{v}_n']$
+
+- 过渡矩阵/转换矩阵
+  $[\mathbf{v}]_B'=P_{B'\leftarrow B}[\mathbf{v}]_B$
+  $[\mathbf{v}]_B=P_{B\leftarrow B'}[\mathbf{v}]_{B'}$
+
+- $P_{B\leftarrow B'}P_{B'\leftarrow B}=I$
+
+- $[B'|B]\Rightarrow [I|P_{B'\leftarrow B}]$
 
 ---
 
 ## 行空间、 列空间、 零空间
+$A$ is a $m\times n$ matrix
 
+- row space 行空间
+  $row(A)=span\{\mathbf{r}_1,\cdots,\mathbf{r}_m\}$
+- column space 列空间
+  $col(A)=span\{\mathbf{c}_1,\cdots,\mathbf{c}_n\}$
+- null space 零空间
+  $null(A)=\{\mathbf{x}\in\mathbb{R}^n:A\mathbf{x}=\mathbf{0}\}$
+- left null space 左零空间 
+  $null(A^T)=\{\mathbf{x}\in\mathbb{R}^m:A^T\mathbf{x}=\mathbf{0}\}$
 
 ---
 
-## 矩阵的秩、零化度、 矩阵基本空间
+## 矩阵基本空间
+
+![](./img/fundamental.png)
+- 行空间和零空间互为正交补
+- 列空间和左零空间互为正交补
+
+正交补(Orthogonal Complements)
+
+> 正交: $col(A)\perp null(A)$
+> 补: $col(A)+null(A)=\mathbb{R}^n$
+
+---
+
+## 矩阵基本空间
+![](img/space_1.png)
+
+---
+
+## 矩阵的秩、零化度
+
+- $rank(A)=dim(row(A))=dim(col(A))$
+  $A$ 的秩 = $A$ 的行阶梯矩阵的首一个数
+  $\Rightarrow rank(A)\leq\min(n,m)$
+- $rank(A)$ 可看作行阶梯矩阵的首一(非零行/主元) 个数
+  $nullity(A)=dim(Null(A))$ 可看作自由元的个数
+  $\Rightarrow rank(A)+nullity(A)=n$
 
 ---
 
