@@ -20,7 +20,7 @@ paginate: true
 - 考试时间: 2023.12.6 星期三 8:15~9:55
 - 考试地点: 教学中心202
 - 考试内容: 第一章到第四章的4.8节（包含）
-- 期中考试占总成绩 30%! 
+- 期中考试占总成绩 30%
 - 试卷为全英文, 不涉及数学的问题可以找监考人员翻译
 - 作答中英文均可
 
@@ -148,15 +148,50 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 
 ## 矩阵运算
 - 矩阵加法
+  注意$A+1=A+I$
+  只把对角线上的元素$+1$
 - 矩阵乘法
+  $A_{m\times n}B_{n\times p}=C_{m\times p}$
+  - 矩阵乘法没有交换律
+    所以矩阵没有二项式定理  
+    $AB\neq BA$
+    $(A+B)^2=A^2+AB+BA+B^2$
 
 ---
 
 ## 矩阵求逆
 1. 伴随矩阵 $A^*$, $adj(A)$
-
+- $C_{i,j}$: $a_{i,j}$的**代数余子式**
+- $C$ : $A$的代数余子式矩阵
+- $A^*=adj(A)=C^T$
+- **无论 $A$ 是否可逆**都有$AA^*=A^*A=|A|I$
+- 若$A$可逆, $A^{-1}=\dfrac{1}{|A|}A^*$
 2. $[A|I]\Rightarrow [I|A^{-1}]$
+  基础行变换
+  > 不能同时使用基础行变换和基础列变换
 
+---
+
+## 矩阵的基础变换
+- 基础矩阵: 由单位矩阵经过一次初等行变换得到的矩阵
+  - 交换两行
+  - 用一个非零常数乘以某一行
+  - 用一个非零常数乘以某一行，然后加到另一行上
+- 左行右列
+  基础行变换,左乘一系列基础矩阵
+  基础列变换,右乘一系列基础矩阵
+
+![w:25cm](./img/21mid.png)
+
+---
+
+## 逆矩阵的性质
+
+- $AA^{-1}=A^{-1}A=I$
+- $(A^{-1})^{-1}=A$
+- $(A^T)^{-1}=(A^{-1})^T$
+- $(AB)^{-1}=B^{-1}A^{-1}$
+- 矩阵的逆是唯一的
 
 ---
 
@@ -165,7 +200,14 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 - 对角矩阵
 - 上三角矩阵
 - 下三角矩阵
+  - 三角矩阵乘三角矩阵还是三角矩阵(使用时不需要证明,但需要说明)
+  - 三角矩阵的逆还是三角矩阵
+  > 上面的三角矩阵是同一种
+
 - 对称矩阵
+  $A^T=A$
+
+- 矩阵的分块 
 
 ---
 
@@ -173,6 +215,7 @@ e.g. $(A+B)^2=A^2+AB+BA+B^2$
 - 行列式的定义
 - 行列式的性质
 - 行列式的计算
+- 行列式的应用
 
 ---
 
@@ -190,16 +233,85 @@ a_{21} & a_{22}
 \end{bmatrix}$
 $|A|=a_{11}a_{22}-a_{12}a_{21}$
 
+---
+
+## 行列式的性质
+
+- $|A^T|=|A|$
+- **$\lambda A = \lambda^n|A|$**
+- $|AB|=|A||B|$
+- $|A^{-1}|=\frac{1}{|A|}$
 
 ---
 
 ## 行列式的性质
 
+> 对行列式可以同时进行基础行变换和基础列变换
+以行变换为例
+
+1. $B$ 由 $A$ 交换两行得到
+  $|B|=-|A|$
+
+2. $B$ 由 $A$ 用一个非零常数乘以某一行得到
+  $|B|=k|A|$
+
+3. $B$ 由 $A$ 用一个非零常数乘以某一行，然后加到另一行上得到
+  $|B|=|A|$
+
+---
+
+## 行列式的性质
+
+4. 由1. 若$A$有两行相同, 则$|A|=0$
+
+e.g.
+$A=\begin{bmatrix}
+1 & 1 & 5 & 4 \\
+2 & 3 & 2 & 4 \\
+1 & 6 & 0 & 3 \\
+4 & 2 & 5 & 1
+\end{bmatrix}$
+
+find $C_{21}+C_{22}+5C_{23}+4C_{24}$
+
+where $C_{ij}$ is the cofactor of $a_{ij}$
+
+---
+
+## 行列式的性质
+
+![](./img/C.png)
+![](./img/A.png) ![](./img/B.png)
+
+> $|C| = |A| + |B|$
+
 ---
 
 ## 行列式的计算
 
+- 三角矩阵 / 对角矩阵
+  $|A|=a_{11}a_{22}\cdots a_{nn}$
 
+  > 使用基础行/列变换将矩阵化为三角矩阵/对角矩阵
+
+- 按行/列展开
+  $|A|=\sum\limits_{i=1}^na_{ij}C_{ij}$
+  注意$C_{ij}$是$a_{ij}$的**代数余子式**,有一个$(-1)^{i+j}$
+
+- 使用行列式性质进行简化
+
+---
+
+## 行列式的应用
+
+1. Cramer's rule 克拉默法则
+  求解单个变量的解
+
+2. 判断矩阵是否可逆
+  $|A|\neq 0 \Leftrightarrow A$可逆
+
+3. 判断一组向量是否线性无关
+  $|A|\neq 0 \Leftrightarrow A$线性无关
 
 ---
 
@@ -212,16 +324,101 @@ $|A|=a_{11}a_{22}-a_{12}a_{21}$
 
 ## $\mathbb{R}^n$ (n维欧氏空间)
 
+$\mathbf{v}\in\mathbb{R}^n$, $\mathbf{v}=(v_1,\cdots,v_n)$
+
+- standard unit vector 标准单位向量
+  $\mathbf{e}_i=(0,\cdots,0,1,0,\cdots,0)$
+  $\{e_1,\cdots,e_n\}$ 是 $\mathbb{R}^n$ 的标准基
 
 ---
 
 ## 范数、内积、距离
 
+- 范数 norm
+  $\left\|\mathbf{v}\right\|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
 
+- 内积 inner product
+  $\mathbf{u}\cdot\mathbf{v}=u_1v_1+u_2v_2+\cdots+u_nv_n$
+
+  > 若将$\mathbf{u},\mathbf{v}$看作列向量, 则$\mathbf{u}\cdot\mathbf{v}=\mathbf{u}^T\mathbf{v}=\mathbf{v}^T\mathbf{u}$
+
+- 距离 distance
+  $\left\|\mathbf{u}-\mathbf{v}\right\|=\sqrt{(u_1-v_1)^2+(u_2-v_2)^2+\cdots+(u_n-v_n)^2}$
 
 ---
 
 ## 正交、叉乘
+
+- orthogonality 正交
+  $\mathbf{u}\perp\mathbf{v} \Leftrightarrow \mathbf{u}\cdot\mathbf{v}=0$
+
+- cross product 叉乘
+  只作用在$\mathbb{R}^3$上
+  $\mathbf{u}\times\mathbf{v}=\begin{vmatrix}
+  \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+  u_1 & u_2 & u_3 \\
+  v_1 & v_2 & v_3
+  \end{vmatrix}=(u_2v_3-u_3v_2,-(u_1v_3-u_3v_1),u_1v_2-u_2v_1)$
+
+  > $\mathbf{u}\times\mathbf{v}$是一个向量, 与$\mathbf{u},\mathbf{v}$都垂直
+
+  注意第2项的负号
+
+---
+
+
+# cross product
+$\mathbf{x}\times\mathbf{y}=\begin{bmatrix}
+x_2y_3-x_3y_2 \\
+x_3y_1-x_1y_3 \\
+x_1y_2-x_2y_1
+\end{bmatrix}$
+- $\mathbf{x}\times\mathbf{y}$ is orthogonal to both $\mathbf{x}$ and $\mathbf{y}$
+- $\left\|\mathbf{x}\times\mathbf{y}\right\|=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\right\|sin\theta$
+
+
+
+# Projection Theorem
+- orthogonal projection of $\mathbf{u}$ on $\mathbf{v}$
+$\mathbf{w}_1=proj_{\mathbf{v}}(\mathbf{u})=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|\mathbf{v}\right\|^2}\mathbf{v}$
+
+- the vector component of \mathbf{u} orthogonal to \mathbf{v}
+$\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\mathbf{u}-\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|v\right\|^2}\mathbf{v}$
+
+
+# cross product property
+![](./img/cross_property.png)
+
+
+## 欧式几何
+
+scalar triple product 混合积(标量三重积)
+
+$\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\begin{vmatrix}
+x_1 & x_2 & x_3 \\
+y_1 & y_2 & y_3 \\
+z_1 & z_2 & z_3
+\end{vmatrix}$
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\mathbf{y}\cdot(\mathbf{z}\times\mathbf{x})=\mathbf{z}\cdot(\mathbf{x}\times\mathbf{y})$
+- $\mathbf{x}\cdot(\mathbf{y}\times\mathbf{z})=\mathbf{0}\Leftrightarrow \mathbf{x},\mathbf{y},\mathbf{z}$ are coplanar
+- $\mathbf{x}\cdot(\mathbf{x}\times\mathbf{y})=\mathbf{y}\cdot(\mathbf{y}\times\mathbf{x})=0$
+
+- Lagrange’s identity
+$\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\mathbf{v}\right\|^2-(\mathbf{u}\cdot\mathbf{v})^2$
+
+---
+
+# cross product geometric meaning
+
+- parallelogram area
+    平行四边形面积
+    $S=\bar{AB}*\bar{AC}sin\theta=\left\|\mathbf{AB}\times\mathbf{AC}\right\|$
+- volume of parallelepiped
+    平行六面体体积
+    $V=S_{base}h=\left\|\mathbf{AB}\times\mathbf{AC}\right\|\cdot\left\|\mathbf{AD}\right\|cos\alpha=\mathbf{AD}\cdot(\mathbf{AB}\times\mathbf{AC})$
+
+
+
 
 ---
 
