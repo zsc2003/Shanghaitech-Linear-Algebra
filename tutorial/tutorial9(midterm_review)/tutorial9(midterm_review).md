@@ -366,7 +366,6 @@ $\mathbf{v}\in\mathbb{R}^n$, $\mathbf{v}=(v_1,\cdots,v_n)$
 
 ---
 
-
 # cross product
 $\mathbf{x}\times\mathbf{y}=\begin{bmatrix}
 x_2y_3-x_3y_2 \\
@@ -376,19 +375,24 @@ x_1y_2-x_2y_1
 - $\mathbf{x}\times\mathbf{y}$ is orthogonal to both $\mathbf{x}$ and $\mathbf{y}$
 - $\left\|\mathbf{x}\times\mathbf{y}\right\|=\left\|\mathbf{x}\right\|\left\|\mathbf{y}\right\|sin\theta$
 
+---
 
-
-# Projection Theorem
+# 投影
 - orthogonal projection of $\mathbf{u}$ on $\mathbf{v}$
+$\mathbf{u}$在$\mathbf{v}$上的投影
 $\mathbf{w}_1=proj_{\mathbf{v}}(\mathbf{u})=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|\mathbf{v}\right\|^2}\mathbf{v}$
+> 注意投影是向量
 
-- the vector component of \mathbf{u} orthogonal to \mathbf{v}
+- the vector component of $\mathbf{u}$ orthogonal to $\mathbf{v}$
+$\mathbf{u}$ 在$\mathbf{v}$的垂直分量
 $\mathbf{w}_2=\mathbf{u}-\mathbf{w}_1=\mathbf{u}-proj_{\mathbf{v}}(\mathbf{u})=\mathbf{u}-\dfrac{\mathbf{u}\cdot\mathbf{v}}{\left\|v\right\|^2}\mathbf{v}$
 
+---
 
-# cross product property
+# 叉乘性质
 ![](./img/cross_property.png)
 
+---
 
 ## 欧式几何
 
@@ -415,16 +419,35 @@ $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\
     $S=\bar{AB}*\bar{AC}sin\theta=\left\|\mathbf{AB}\times\mathbf{AC}\right\|$
 - volume of parallelepiped
     平行六面体体积
-    $V=S_{base}h=\left\|\mathbf{AB}\times\mathbf{AC}\right\|\cdot\left\|\mathbf{AD}\right\|cos\alpha=\mathbf{AD}\cdot(\mathbf{AB}\times\mathbf{AC})$
+    $V=Sh=\left\|\mathbf{AB}\times\mathbf{AC}\right\|\cdot\left\|\mathbf{AD}\right\|cos\alpha=\mathbf{AD}\cdot(\mathbf{AB}\times\mathbf{AC})$
 
+---
 
+## 欧式几何
+- 直线
+$\mathbf{r}=\mathbf{r}_0+t\mathbf{v}$
+$\dfrac{x-x_0}{v_1}=\dfrac{y-y_0}{v_2}=\dfrac{z-z_0}{v_3}$
+$\mathbf{v}=(v_1,v_2,v_3)$ 直线的方向向量
 
+- 平面
+$\mathbf{r}=\mathbf{r}_0+s\mathbf{v}+t\mathbf{w}$
+$n_1(x-x_0)+n_2(y-y_0)+n_3(z-z_0)=0$
+$\mathbf{n}=(n_1,n_2,n_3)$ 平面的法向量
+$\mathbf{n}= \mathbf{v}\times\mathbf{w}$
 
 ---
 
 ## 欧式几何
 
+- line(2-dimensional):
+点 $P_0(x_0,y_0)$ 到直线 $ax+by+c=0$
+$d = \dfrac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}$
+$\mathbf{n}=(a,b)$ is the normal vector of the line
 
+- plane(3-dimensional):
+点 $P_0(x_0,y_0,z_0)$ 到平面 $ax+by+cz+d=0$
+$d = \dfrac{|ax_0+by_0+cz_0+d|}{\sqrt{a^2+b^2+c^2}}$
+$\mathbf{n}=(a,b,c)$ is the normal vector of the plane
 
 ---
 
@@ -440,17 +463,25 @@ $\left\|\mathbf{u}\times\mathbf{v}\right\|^2=\left\|\mathbf{u}\right\|^2\left\|\
 
 ## 向量空间(线性空间) linear space/ vector space
 
+![](./img/property_10.png)
+
+向量空间满足以上$10$条性质
+
+- 若证明不是向量空间, 只需要找到一个反例即可
 
 ---
 
 ## 子空间 subspace
 
 1. 线性空间(向量空间)子集
+  $W\subseteq V$
 2. 加法封闭性
-    $\mathbf{u}
+    $\mathbf{u},\mathbf{v}\in W$
+    $\mathbf{u}+\mathbf{v}\in W$
 
 3. 数量积封闭性
-
+    $\mathbf{u}\in W, k\in \mathbb{R}$
+    $k\mathbf{u}\in W$
 
 --- 
 
