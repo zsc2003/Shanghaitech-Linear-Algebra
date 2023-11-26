@@ -10,12 +10,6 @@ paginate: true
 
 ---
 
-# homework
-
-- TBD
-
----
-
 # midterm review 期中复习
 - 考试时间: 2023.12.6 星期三 8:15~9:55
 - 考试地点: 教学中心202
