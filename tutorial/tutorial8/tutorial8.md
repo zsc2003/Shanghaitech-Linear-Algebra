@@ -11,13 +11,6 @@ paginate: true
 
 ---
 
-# homework
-
-- 
-
-
----
-
 # Plus/Minus Theorem
 $V$ is a vector space, $S\subset V$
 - If $S$ is an independent set, and $\mathbf{v}\in V, \mathbf{v}\not\in S$, then $S\cup\{\mathbf{v}\}$ is also an **independent set**
