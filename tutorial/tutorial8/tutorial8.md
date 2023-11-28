@@ -151,6 +151,18 @@ where $\mathbf{s}_0$ is a particular solution, $\mathbf{v}_1,\cdots,\mathbf{v}_k
 
 ---
 
+# rank property
+
+- $A\in M_{m\times n}, W=\{A\mathbf{v}:\mathbf{v}\in\mathbb{R}^n\}$
+then $W=Col(A)$
+
+- $rank(AB)\leq \min(rank(A),rank(B))$
+  矩阵相乘秩不增
+
+- $rank(A^TA)=rank(A)$
+
+---
+
 # Equivalent expression
 $A\in M_{n\times n}$
 ![](./img/Equivalent.png)
@@ -171,3 +183,5 @@ $Ax+By+Cz+D=0$
 
 - 过空间内一点$(x_0,y_0,z_0)$, 法向量为$\mathbf{v}=(a,b,c)$ 的平面的方程
   $a(x-x_0)+b(y-y_0)+c(z-z_0)=0$
+
+

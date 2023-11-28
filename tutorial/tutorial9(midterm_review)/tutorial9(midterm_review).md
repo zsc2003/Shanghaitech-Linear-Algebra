@@ -572,6 +572,18 @@ $A$ is a $m\times n$ matrix
 
 ---
 
+# rank property
+
+- $A\in M_{m\times n}, W=\{A\mathbf{v}:\mathbf{v}\in\mathbb{R}^n\}$
+then $W=Col(A)$
+
+- $rank(AB)\leq \min(rank(A),rank(B))$
+  矩阵相乘秩不增
+
+- $rank(A^TA)=rank(A)$
+
+---
+
 ## Equivalent expression
 $A\in M_{n\times n}$
 ![](./img/Equivalent.png)
