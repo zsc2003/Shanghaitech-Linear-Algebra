@@ -12,6 +12,13 @@ paginate: true
 
 # mid-term
 
+
+
+
+---
+
+# mid-term
+
 ![](./img/t1.png)
 
 ---
@@ -24,6 +31,73 @@ $V$ is **vectoe space**
 - $x + (-x) = 0$
   $-x = (-x_1, -x_2)$
   $x+(-x) = (x_1-2x_1, x_2-3x_2)\neq 0$
+
+---
+
+# linearty 线性
+$T: U\to V$ linear transform: 线性变换
+- additivity 可加性
+  $T(\mathbf{x}+\mathbf{y})=T(\mathbf{x})+T(\mathbf{y})$
+- homogeneity 齐次性
+  $T(k\mathbf{x})=kT(\mathbf{x})$
+
+> $T$ 可看作是一个函数$f$, 所做的操作是将$\mathbf{x}$映射到$T(\mathbf{x}),(\mathbf{x}\to A\mathbf{x})$
+
+---
+
+# Matrix transformation
+- mutiplication of matrix and vector is a linear transformation
+
+$A = [T] = [T(\mathbf{e}_1), T(\mathbf{e}_2), \cdots, T(\mathbf{e}_n)]$
+
+>复合函数 $f(g(x))$ 也可写作 $(f\circ g)(x)$
+> 同理: $(T_2\circ T_1)(\mathbf{x}) = [T_2][T_1](\mathbf{x})$
+---
+
+# concepts
+![](./img/function.png)
+
+- image 像 $\Leftrightarrow$ range 值域
+- mapping 映射
+
+---
+# concepts
+
+- domain 定义域
+  {Adams, Chou, Goodfriend, Rodriguez, Stevens}
+- codomain 陪域
+  ${A, B, C, D, F}$
+- range 值域
+  ${A, B, C, F}$
+- 定义域是映射的集合, 值域是**被**映射**到**的集合, 陪域是**可被**映射到的集合
+值域是陪域的子集
+
+---
+
+# concepts
+
+- kernel 核
+  $Ker(T) = \{\mathbf{x} \in V | T(\mathbf{x}) = \mathbf{0}\}$
+  $Ker(T) \Leftrightarrow Null(A)$
+
+- range 值域
+  $R(T) = \{\mathbf{y} \in W | \mathbf{y} = T(\mathbf{x}), \mathbf{x} \in V\}$
+  $R(T) \Leftrightarrow Col(A)$
+
+---
+
+# concepts
+- injective 单射
+  $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$
+
+- surjective(onto) 满射
+  $\forall y \in Y, \exists x \in X, s.t. f(x) = y$
+
+- bijective(one-to-one) 双射(一一映射)
+  injective + surjective
+  > 只有一一映射才存在逆映射(反函数)
+
+![](./img/one2one.png)
 
 ---
 
