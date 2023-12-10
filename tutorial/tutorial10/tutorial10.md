@@ -11,6 +11,8 @@ paginate: true
 ---
 
 # mid-term
+distribution?
+
 
 
 
@@ -48,9 +50,10 @@ $T: U\to V$ linear transform: 线性变换
 # Matrix transformation
 - mutiplication of matrix and vector is a linear transformation
 
-$A = [T] = [T(\mathbf{e}_1), T(\mathbf{e}_2), \cdots, T(\mathbf{e}_n)]$
+- $A = [T] = [T(\mathbf{e}_1), T(\mathbf{e}_2), \cdots, T(\mathbf{e}_n)]$
+  $A$: the standard matrix of $T$
 
->复合函数 $f(g(x))$ 也可写作 $(f\circ g)(x)$
+>复合函数(composition) $f(g(x))$ 也可写作 $(f\circ g)(x)$
 > 同理: $(T_2\circ T_1)(\mathbf{x}) = [T_2][T_1](\mathbf{x})$
 ---
 
@@ -81,8 +84,8 @@ $A = [T] = [T(\mathbf{e}_1), T(\mathbf{e}_2), \cdots, T(\mathbf{e}_n)]$
   $Ker(T) \Leftrightarrow Null(A)$
 
 - range 值域
-  $R(T) = \{\mathbf{y} \in W | \mathbf{y} = T(\mathbf{x}), \mathbf{x} \in V\}$
-  $R(T) \Leftrightarrow Col(A)$
+  $RAN(T) = \{\mathbf{y} \in W | \mathbf{y} = T(\mathbf{x}), \mathbf{x} \in V\}$
+  $RAN(T) \Leftrightarrow Col(A)$
 
 ---
 
@@ -167,12 +170,12 @@ $\begin{bmatrix}x'\\y'\\z'\end{bmatrix}=
 
 ---
 
-# Dilations(扩张) and Contractions(收缩) on $\mathbb{R}^2$
+# Dilations(拉伸) and Contractions(收缩) on $\mathbb{R}^2$
 ![](./img/dilation_2D.png)
 
 ---
 
-# Dilations(扩张) and Contractions(收缩) on $\mathbb{R}^3$
+# Dilations(拉伸) and Contractions(收缩) on $\mathbb{R}^3$
 ![](./img/dilation_3D.png)
 
 ---
