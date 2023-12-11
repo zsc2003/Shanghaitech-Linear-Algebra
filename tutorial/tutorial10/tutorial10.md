@@ -113,6 +113,21 @@ https://www.bilibili.com/video/BV1ys411472E?p=4&vd_source=6b1c6ae9b58bc4261b8429
 
 ---
 
+# affine transformation 仿射变换
+![](./img/affine_transform1.png) ![](./img/affine_transform2.png)
+> 仿射变换: 平行不变性
+
+
+---
+
+# homography projective transformation(单应性变换)
+- 想要任意变换(正方形变为任意四边形)
+![](./img/homography.png)
+
+$H = K_2R_2(I-\dfrac{1}{d}(-R_1^{-1}t_1+R_2^{-1}t_2)n^TR_1)R_1^TK_1^{-1}$
+
+---
+
 # Reflection on $\mathbb{R}^2$ 
 
 ![](./img/R2.png)
