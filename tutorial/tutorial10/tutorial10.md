@@ -11,11 +11,7 @@ paginate: true
 ---
 
 # mid-term
-distribution?
-
-
-
-
+![w:20cm](./img/grade.png)
 
 ---
 
