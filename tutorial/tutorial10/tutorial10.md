@@ -86,15 +86,15 @@ $T: U\to V$ linear transform: 线性变换
 ---
 
 # concepts
-- injective 单射
+- injective(one-to-one) 单射(一一映射)
   $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$
+  > 只有一一映射才存在逆映射(反函数)
 
 - surjective(onto) 满射
   $\forall y \in Y, \exists x \in X, s.t. f(x) = y$
 
-- bijective(one-to-one) 双射(一一映射)
+- bijective 双射
   injective + surjective
-  > 只有一一映射才存在逆映射(反函数)
 
 ![](./img/one2one.png)
 
