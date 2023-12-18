@@ -35,16 +35,31 @@ $E$
 
 ---
 
-- one-to-one $\Leftrightarrow$ injective
+- one-to-one / injective
 $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$
   > 只有一一映射才存在逆映射(反函数)
 $T:V\to W$ is one-to-one $\Leftrightarrow T^{-1}$ exists
 $T^{-1}: R(T)\to V$
 
-- onto
+- onto / surjective
     $T:V\to W$ is onto $\Leftrightarrow R(T) = W$
 
-- sujective = injective + onto
+- bijective = injective + surjective
+
+---
+
+- 矩阵变换要从右往左看
+    $T(\mathbf{x})=(T_3(T_2(T_1(\mathbf{x}))))=(T_3\circ T_2\circ T_1)(\mathbf{x})$
+    $[T]=[T_3][T_2][T_1]$
+- $T: \mathbb{R}^n\to \mathbb{R}^m$
+    $[T]\in M_{m\times n}$
+    $\mathbf{y}=T(\mathbf{x})=[T]\mathbf{x},\mathbf{x}\in \mathbb{R}^n,\mathbf{y}\in \mathbb{R}^m$
+    所以在使用rank-nullity theorem时, 注意是$rank([T])+nullity([T])=n$
+
+
+- $T:V\to W$, $W$ 为$T$的到达域(codomain),而不是值域(range)
+  原因: $T$不一定是满射
+    > $T$的值域(range)是$W$的子集
 
 ---
 
