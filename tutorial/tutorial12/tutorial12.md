@@ -5,8 +5,13 @@ paginate: true
 
 ---
 
-# Linear Algebra Tutorial 
-2023.12.
+# Linear Algebra Tutorial 12
+2023.12.26
+
+---
+
+# homework
+
 
 ---
 

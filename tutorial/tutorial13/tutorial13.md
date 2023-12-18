@@ -5,8 +5,8 @@ paginate: true
 
 ---
 
-# Linear Algebra Tutorial 
-2024.1.
+# Linear Algebra Tutorial 13
+2024.1.2
 
 ---
 
