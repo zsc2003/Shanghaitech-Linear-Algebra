@@ -13,6 +13,10 @@ paginate: true
 # homework
 
 
+
+
+
+
 ---
 
 # 线性变换的矩阵表示
@@ -24,17 +28,34 @@ Matrices for general linear transformations
 (The matrix for $T$ relative to $B$ and $B'$)
 
 $[T]_{B',B}=[[T(\mathbf{v}_1)]_{B'}\ \cdots\ [T(\mathbf{v}_n)]_{B'}]$
+$[T(\mathbf{v})]_{B'}=[T]_{B',B}[\mathbf{v}]_{B}$
 
 ---
 
-# Matrices for general linear transformations
+# composition of linear transformations
+![w:100cm](./img/composition.png)
+$T_1:U\to V, T_2:V\to W$
+$[T_2\circ T_1]_{B',B}=[T_2]_{B',B''}[T_1]_{B'',B}$
+> cancel the nearest basis(B'')
+
+---
+
+![](./img/property1.png)
 
 
+---
 
+# inverse of linear transformations
+![w:100cm](./img/inverse.png)
+$[T^{-1}]_{B,B'}=([T]_{B',B})^{-1}$
 
+---
 
+# property
 
+![](./img/property2.png)
 
+T是一个一一映射 $\Leftrightarrow$ $[T]_{B',B}$ 可逆
 
 ---
 
