@@ -10,6 +10,11 @@ paginate: true
 
 ---
 
+# homework
+![](./img/standard_matrix.png)
+
+---
+
 # theorem
 ![](./img/theorem.png)
 
@@ -122,7 +127,23 @@ $T_1:U\to V$ and $T_2:V\to W$ are injective
 - $g_{B'}$: 将$T(\mathbf{v})$转换成以$B'$为基的坐标
 - $T_A$: $\mathbb{R}^n\to\mathbb{R}^m$的线性变换
 
-$T_A(\mathbf{x})=A\mathbf{x}$, s.t. $[T(\mathbf{v})]_{B'}=A[\mathbf{v}]_{B}$
+$T_A(\mathbf{x})=A\mathbf{x}$, s.t. $[T(\mathbf{v})]_{B'}=A[\mathbf{v}]_{B}=[T]_{B',B}[\mathbf{v}]_{B}$
 
 ---
 
+# Matrices for general linear transformations
+
+为$T$关于基底$B$与$B'$的矩阵表示 
+(The matrix for $T$ relative to $B$ and $B'$)
+
+$T_A\Rightarrow [T]_{B',B}$
+$B=\{\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n\}$, $B'=\{\mathbf{w}_1,\mathbf{w}_2,\cdots,\mathbf{w}_m\}$
+
+$[T_A(\mathbf{v})]_{B'}=[T]_{B',B}[\mathbf{v}]_{B}$
+
+$[T]_{B',B}=[[T(\mathbf{v}_1)]_{B'}\ \cdots\ [T(\mathbf{v}_n)]_{B'}]$
+
+---
+
+# Matrices for general linear transformations
+![w:35cm](./img/example.png)
