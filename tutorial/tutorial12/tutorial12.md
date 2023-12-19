@@ -32,6 +32,25 @@ $[T(\mathbf{v})]_{B'}=[T]_{B',B}[\mathbf{v}]_{B}$
 
 ---
 
+# Matrices for general linear transformations
+
+为$T$关于基底$B$与$B'$的矩阵表示 
+(The matrix for $T$ relative to $B$ and $B'$)
+
+$T_A\Rightarrow [T]_{B',B}$
+$B=\{\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_n\}$, $B'=\{\mathbf{w}_1,\mathbf{w}_2,\cdots,\mathbf{w}_m\}$
+
+$[T_A(\mathbf{v})]_{B'}=[T]_{B',B}[\mathbf{v}]_{B}$
+
+$[T]_{B',B}=[[T(\mathbf{v}_1)]_{B'}\ \cdots\ [T(\mathbf{v}_n)]_{B'}]$
+
+---
+
+# Matrices for general linear transformations
+![w:35cm](./img/example.png)
+
+---
+
 # composition of linear transformations
 ![w:100cm](./img/composition.png)
 $T_1:U\to V, T_2:V\to W$
@@ -56,6 +75,21 @@ $[T^{-1}]_{B,B'}=([T]_{B',B})^{-1}$
 ![](./img/property2.png)
 
 T是一个一一映射 $\Leftrightarrow$ $[T]_{B',B}$ 可逆
+
+---
+
+
+
+
+
+---
+
+# 相似矩阵 Similarity
+
+
+
+
+
 
 ---
 
@@ -107,10 +141,11 @@ $\big|\begin{matrix*}1-\lambda&1\\1&-\lambda\end{matrix*}\big| = \lambda^2-\lamb
 
 $$\begin{bmatrix}1&1\\1&0\end{bmatrix} = \begin{bmatrix}\frac{1+\sqrt{5}}{2}&\frac{1-\sqrt{5}}{2}\\\frac{1-\sqrt{5}}{2}&\frac{1+\sqrt{5}}{2}\end{bmatrix}\begin{bmatrix}\frac{1+\sqrt{5}}{2}&0\\0&\frac{1-\sqrt{5}}{2}\end{bmatrix}\begin{bmatrix}\frac{1}{\sqrt{5}}&\frac{1}{\sqrt{5}}\\-\frac{1}{\sqrt{5}}&\frac{1}{\sqrt{5}}\end{bmatrix}$$
 
-
 ---
 
-# 相似矩阵 Similarity
+实对称矩阵一定可以相似对角化
+
+$A^{\top}A$的特征值一定都是非负的
 
 
 
