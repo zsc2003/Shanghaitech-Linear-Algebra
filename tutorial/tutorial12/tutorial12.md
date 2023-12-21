@@ -44,6 +44,10 @@ $[T_A(\mathbf{v})]_{B'}=[T]_{B',B}[\mathbf{v}]_{B}$
 
 $[T]_{B',B}=[[T(\mathbf{v}_1)]_{B'}\ \cdots\ [T(\mathbf{v}_n)]_{B'}]$
 
+- $rank(T) = rank([T]_{B′,B}), nullity(T) = nullity([T]_{B′,B})$
+
+- $[T^{-1}]_{B,B'}=([T]_{B',B})^{-1}$
+
 ---
 
 # Matrices for general linear transformations
@@ -78,9 +82,8 @@ T是一个一一映射 $\Leftrightarrow$ $[T]_{B',B}$ 可逆
 
 ---
 
-
-
-
+# theorem
+![](./img/theorem.png)
 
 ---
 
@@ -96,14 +99,78 @@ T是一个一一映射 $\Leftrightarrow$ $[T]_{B',B}$ 可逆
 # 特征值(eigenvalue)与特征向量(eigenvector)
 > chapter 5 in the textbook
 
+![](./img/eigen.png)
 
+---
 
+# 特征值(eigenvalue)
+$A\mathbf{x}=\lambda\mathbf{x}$
+$(\lambda I-A)\mathbf{x}=\mathbf{0}$
 
+$\mathbf{x}\neq\mathbf{0}$
+$\big|\lambda I-A\big|=0$
 
+- $p(\lambda)=\big|\lambda I-A\big|$: eigen polynomial 特征多项式
+- $p(\lambda)=0$: characteristic equation 特征方程
 
+---
 
+# eigen polynomial 特征多项式
+$p(\lambda)=\big|\lambda I-A\big|$
+$p(\lambda)$为关于$\lambda$,最高次项为$n$的多项式
+$p(\lambda)=(\lambda-\lambda_1)\cdots(\lambda-\lambda_n)=\lambda^n+a_{n-1}\lambda^{n-1}+\cdots+a_1\lambda+a_0$
 
+- let $\lambda=0$, then $p(0)=\big|-A\big|=(-1)^n\lambda_1\cdots\lambda_n=a_0\Rightarrow a_0=(-1)^n|A|$
+$|A|=\lambda_1\cdots\lambda_n=(-1)^na_0$
 
+- 由行列式的另一种定义(不同行不同列的元素的积之和), $\lambda_{n-1}$的系数只能由$(\lambda-a_{11})\cdots(\lambda-a_{nn})$产生, 即$a_{n-1}=-(a_{11}+\cdots+a_{nn})$
+$tr(A)=a_{11}+\cdots+a_{nn}=-a_{n-1}$
+
+---
+
+# 特征向量(eigenvector)
+$A\mathbf{x}=\lambda\mathbf{x}$
+$(A-\lambda I)\mathbf{x}=\mathbf{0}$
+$\mathbf{x}\neq\mathbf{0}$
+
+- the nontrivial solutions of $(A-\lambda I)\mathbf{x}=\mathbf{0}$
+- the basis of $null(A-\lambda I)$
+- called the eigenvectors of $A$ corresponding to $\lambda$
+
+The number of the eigenvectors of $A$ corresponding to $\lambda_i$ is same as the multiplicity of roots of $\lambda_i$ of $p(\lambda)$
+
+---
+
+# eigenvalue and eigenvector
+$A=\begin{bmatrix}0&0&-2\\
+1&2&1\\
+1&0&3\end{bmatrix}$
+
+find the eigenvalues and eigenvectors of $A$
+
+---
+
+# property
+![](./img/eigenvalue_property.png)
+
+---
+
+# example
+$A$ is a $2\times 2$ matrix with eigenvalues $\lambda_1,\lambda_2\in\mathbb{Z}$, $B=A^{-2}-6A^{-1}$, the eigenvalues of $B$ are $-5$ and $7$, find $\lambda_1,\lambda_2$
+
+---
+
+# example
+$A$ is a $2\times 2$ matrix with eigenvalues $\lambda_1,\lambda_2\in\mathbb{Z}$, $B=A^{-2}-6A^{-1}$, the eigenvalues of $B$ are $-5$ and $7$, find $\lambda_1,\lambda_2$
+
+$\dfrac{1}{\lambda_1^2} - 6\dfrac{1}{\lambda_1} = -5$
+$\dfrac{1}{\lambda_2^2} - 6\dfrac{1}{\lambda_2} = 7$
+
+$\lambda_1 = 1, \lambda_2 = -1$
+
+---
+
+# similarity invariants 相似不变量
 
 
 ---
