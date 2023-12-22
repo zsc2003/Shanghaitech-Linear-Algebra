@@ -85,14 +85,56 @@ T是一个一一映射 $\Leftrightarrow$ $[T]_{B',B}$ 可逆
 # theorem
 ![](./img/theorem.png)
 
+- $[T]_{B,B} = [T]_B$
+- $[T]_{B',B'} = [T]_{B'}$
+
 ---
 
 # 相似矩阵 Similarity
 
+$T:V\to V$是一个线性变换,
+$B$是$V$的一个基底, $A=[T]_{B,B}$: $T$关于$B$的矩阵表示
+$V$的另一组基底$B'$, $A'=[T]_{B',B'}$: $T$关于$B'$的矩阵表示
+
+- $[T]_{B',B'}=(P_{B\leftarrow B'})^{-1}[T]_{B,B}P_{B'\leftarrow B}$
+
+
+$\textcolor{red}{TODO}$ explaination
 
 
 
 
+
+
+
+
+---
+
+# Similarity
+$B=P^{-1}AP$, then $A$ and $B$ are similar, $A$ is similar to $B$
+
+- 自反性 $A$ is similar to $A$   $(P=I)$
+- 对称性 $A$ is similar to $B \Leftrightarrow B$ is similar to $A$
+- 传递性 $A$ is similar to $B$, $B$ is similar to $C$, then $A$ is similar to $C$
+
+- **矩阵多项式** if $A$ is similar to $B$, then $p(A)$ is similar to $p(B)$
+ $p(A)=a_0+a_1A+\cdots+a_nA^n$
+
+> $[T]_{B',B'}=(P_{B\leftarrow B'})^{-1}[T]_{B,B}P_{B'\leftarrow B}$
+所以说 $[T]_{B,B}$ 和 $[T]_{B',B'}$ 是相似的
+
+---
+
+# 相似不变量 similarity invariants
+$B=P^{-1}AP$
+
+- $|A|=|B|$
+- $tr(A)=tr(B)$ 
+    (可以通过$tr(A)=\lambda_1+\cdots+\lambda_n$证明)
+- $rank(A)=rank(B)$
+    $B=P^{-1}AP\Rightarrow rank(B)\leq rank(A)$
+    $A=PBP^{-1}\Rightarrow rank(A)\leq rank(B)$
+- $nullity(A)=nullity(B)$
 
 ---
 
@@ -134,8 +176,9 @@ $(A-\lambda I)\mathbf{x}=\mathbf{0}$
 $\mathbf{x}\neq\mathbf{0}$
 
 - the nontrivial solutions of $(A-\lambda I)\mathbf{x}=\mathbf{0}$
-- the basis of $null(A-\lambda I)$
-- called the eigenvectors of $A$ corresponding to $\lambda$
+- $\mathbf{x}\in null(A-\lambda I)$
+- $\mathbf{x}$ : the eigenvectors(特征向量) of $A$ corresponding to $\lambda$
+- $null(A-\lambda I)$ : the eigenspace(特征空间) of $A$ corresponding to $\lambda$
 
 The number of the eigenvectors of $A$ corresponding to $\lambda_i$ is same as the multiplicity of roots of $\lambda_i$ of $p(\lambda)$
 
@@ -171,11 +214,85 @@ $\lambda_1 = 1, \lambda_2 = -1$
 ---
 
 # similarity invariants 相似不变量
-
+$B=P^{-1}AP$
+- determinant, rank, nullity, trace
+- $A$,$B$有相同的特征多项式(eigen polynomial)
+    $|\lambda I-B|=|\lambda P^{-1}IP- P^{-1}AP|=|P^{-1}(\lambda I-A)P|=|\lambda I-A|$ 
+- $A$,$B$有相同的特征值(eigenvalues)
+- $A$,$B$ 特征空间的**维度数**相同,特征空间不一定相同
 
 ---
 
-# 对角化 Diagonalization
+# similarity
+$B=P^{-1}AP$
+- $A,B$ 有相同的eigenvalues $\lambda$
+- 若$\mathbf{x}$是$A$的eigenvector, 则$P^{-1}\mathbf{x}$是$B$的eigenvector
+- 若$\mathbf{y}$是$B$的eigenvector, 则$P\mathbf{y}$是$A$的eigenvector
+
+---
+
+# (相似)对角化 Diagonalization
+若一个矩阵$A$可写作$D=P^{-1}AP$,即$A=PDP^{-1}$, 则称$A$可对角化(diagonalizable)
+
+usage:
+$A^n=PDP^{-1}PDP^{-1}\cdots PDP^{-1}=PD^nP^{-1}$
+
+---
+
+# Diagonalization
+e.g. $A=\begin{bmatrix}1&1\\-2&4\end{bmatrix}$, find $A^n$
+
+思路: 将$A$对角化, $A=PDP^{-1}$, $A^n=PD^nP^{-1}$
+
+1. 求$A$的特征值和特征向量
+2. 将特征向量组成$P$
+原因: $A=PDP^{-1}\Leftrightarrow AP=PD$
+
+$D$: 特征值
+$P$: 特征空间的基拼成(对应特征值)
+
+$P=\begin{bmatrix}1&1\\-2&4\end{bmatrix}$, $D=\begin{bmatrix}2&0\\0&3\end{bmatrix}$
+
+---
+
+# Diagonalization
+
+可对角化: 对于一个有着$k$重根的特征值, 其特征空间的维度也为$k$
+
+即能找到$n$个线性无关的特征向量
+
+- 若 $A \in M_{n\times n}$拥有$n$个不同的特征值，那么$A$可对角化
+    每个特征值至少有一个对应的特征向量
+
+- 不同特征值的对应的特征向量线性无关
+
+- $A$的任何一个特征值$\lambda$, 几何重数(geometric multiplicity)(特征空间的维度) $\leq$ 代数重数(algebraic multiplicity)($\lambda$的重数)
+
+---
+
+# property
+
+- **对称矩阵**不同特征值对应的特征向量彼此正交
+    设$\lambda_1\neq \lambda_2$, 其对应的特征向量为$\mathbf{x}_1,\mathbf{x}_2$
+    $A\mathbf{x}_1=\lambda_1\mathbf{x}_1,A\mathbf{x}_2=\lambda_2\mathbf{x}_2$
+    $\mathbf{x}_1^{\top}A\mathbf{x}_2=\mathbf{x}_1^{\top}\lambda_2\mathbf{x}_2=\lambda_2\mathbf{x}_1^{\top}\mathbf{x}_2$
+    $(A\mathbf{x}_1)^{\top}\mathbf{x}_2=(\lambda_1\mathbf{x}_1)^{\top}\mathbf{x}_2$
+    $(\lambda_2-\lambda_1)\mathbf{x}_1^{\top}\mathbf{x}_2=x_1^{\top}A\mathbf{x}_2-x_1^{\top}A^{\top}\mathbf{x}_2=0$
+
+- 实对称矩阵一定可以相似对角化
+
+- $A^{\top}A$的特征值一定都是非负的
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -207,16 +324,3 @@ $$\begin{bmatrix}a_{n+2}\\a_{n+1}\end{bmatrix} = \begin{bmatrix}1&1\\1&0\end{bma
 $\big|\begin{matrix*}1-\lambda&1\\1&-\lambda\end{matrix*}\big| = \lambda^2-\lambda-1=0$
 
 $$\begin{bmatrix}1&1\\1&0\end{bmatrix} = \begin{bmatrix}\frac{1+\sqrt{5}}{2}&\frac{1-\sqrt{5}}{2}\\\frac{1-\sqrt{5}}{2}&\frac{1+\sqrt{5}}{2}\end{bmatrix}\begin{bmatrix}\frac{1+\sqrt{5}}{2}&0\\0&\frac{1-\sqrt{5}}{2}\end{bmatrix}\begin{bmatrix}\frac{1}{\sqrt{5}}&\frac{1}{\sqrt{5}}\\-\frac{1}{\sqrt{5}}&\frac{1}{\sqrt{5}}\end{bmatrix}$$
-
----
-
-实对称矩阵一定可以相似对角化
-
-$A^{\top}A$的特征值一定都是非负的
-
-
-
-
-
-
-
