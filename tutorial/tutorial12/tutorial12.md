@@ -17,6 +17,7 @@ paginate: true
 
 
 
+
 ---
 
 # 线性变换的矩阵表示
@@ -96,17 +97,18 @@ $T:V\to V$是一个线性变换,
 $B$是$V$的一个基底, $A=[T]_{B,B}$: $T$关于$B$的矩阵表示
 $V$的另一组基底$B'$, $A'=[T]_{B',B'}$: $T$关于$B'$的矩阵表示
 
-- $[T]_{B',B'}=(P_{B\leftarrow B'})^{-1}[T]_{B,B}P_{B'\leftarrow B}$
+- $[T]_{B',B'}=(P_{B\leftarrow B'})^{-1}[T]_{B,B}P_{B\leftarrow B'}$
 
+---
 
-$\textcolor{red}{TODO}$ explaination
+- $[T]_{B',B'}=(P_{B\leftarrow B'})^{-1}[T]_{B,B}P_{B\leftarrow B'}$
 
+explaination
+![](./img/explain.png)
 
-
-
-
-
-
+> 1. 以$B'$为基的坐标转成以$B$为基的坐标
+> 2. 以$B$为基的坐标进行线性变换
+> 3. 以$B$为基的坐标转成以$B'$为基的坐标
 
 ---
 
@@ -279,26 +281,15 @@ $P=\begin{bmatrix}1&1\\-2&4\end{bmatrix}$, $D=\begin{bmatrix}2&0\\0&3\end{bmatri
     $(A\mathbf{x}_1)^{\top}\mathbf{x}_2=(\lambda_1\mathbf{x}_1)^{\top}\mathbf{x}_2$
     $(\lambda_2-\lambda_1)\mathbf{x}_1^{\top}\mathbf{x}_2=x_1^{\top}A\mathbf{x}_2-x_1^{\top}A^{\top}\mathbf{x}_2=0$
 
+- 若将**对称矩阵**的特征向量的基**单位化**得到$P$,则$P$是正交矩阵
+    $P^{\top}P=I$
+
 - 实对称矩阵一定可以相似对角化
 
 - $A^{\top}A$的特征值一定都是非负的
+    $\forall x, x^{\top}A^{\top}Ax=\|Ax\|^2\geq 0\Leftrightarrow A^{\top}A \succeq 0\Leftrightarrow A^{\top}A$的特征值都是非负的
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 同理, $AA^{\top}$的特征值一定都是非负的
 
 ---
 
