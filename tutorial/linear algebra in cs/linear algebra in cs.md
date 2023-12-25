@@ -7,12 +7,45 @@ paginate: true
 
 # linear algebra in CS
 
+> 你们觉得你们现在学的东西没有用，并不是因为它真的没有用，只是你们还没有遇到要用到那门课的时候
+
 ---
 
+- 一个CS的学生, 在大学期间其实会多次重新学习线性代数
 
-
-
+- 学习过的内容不需要你牢牢记住, 但是需要你知道它的存在, 以及它的用途, 以及清楚的知道你需要的时候去哪里找
 
 ---
 
 ![](./img/joke.png)
+
+---
+
+- for algorithm and data structure / information theory
+
+e.g. the Laplacian matrix of a graph
+![](./img/laplace.png)
+
+---
+
+- for probability and statistics
+
+---
+
+- for machine learning
+
+---
+
+- for computer graphics
+
+---
+
+- for computer vision
+
+---
+
+- for robotics
+- for data mining
+- for data science
+- for natural language processing
+$\vdots$
