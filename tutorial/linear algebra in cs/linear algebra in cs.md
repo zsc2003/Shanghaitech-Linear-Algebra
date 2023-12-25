@@ -30,7 +30,7 @@ e.g. the Laplacian matrix of a graph
 
 - for probability and statistics
 
-![](./img/expectation.png)
+![w:20cm](./img/expectation.png)
 
 ---
 
