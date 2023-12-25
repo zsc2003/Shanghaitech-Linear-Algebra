@@ -30,22 +30,42 @@ e.g. the Laplacian matrix of a graph
 
 - for probability and statistics
 
----
-
-- for machine learning
+![](./img/expectation.png)
 
 ---
 
-- for computer graphics
+- for machine learning(ML)
+![w:20cm](./img/pca.png)
 
 ---
 
-- for computer vision
+- for optimization
+![](./img/simply.png)
 
 ---
 
+- for computer graphics(CG)
+![w:20cm](./img/cg.png)
+
+---
+
+- for computer vision(CV)
+![](./img/cv.png)
+
+---
+
+- for computer vision(CV)
+![](./img/homography.png)
+
+---
+
+- for computer vision(CV)
+![](./img/eigen.png)
+
+---
+
+- for natural language processing(NLP)
 - for robotics
 - for data mining
 - for data science
-- for natural language processing
 $\vdots$
