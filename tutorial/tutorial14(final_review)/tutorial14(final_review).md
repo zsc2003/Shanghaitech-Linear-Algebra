@@ -40,15 +40,14 @@ paginate: true
     - 2
     - 3
 - chapter6 特征值与特征向量(英文教材chapter 5)
-    - 1
-    - 2
-    - 3
+    - 特征值与特征向量
+    - 相似对角化
 - chapter7
 
 ---
 
-# chapter4 向量空间()
-- 1
+# chapter4,5 向量空间,线性变换
+- 矩阵变换
 - 2
 - 3
 
@@ -106,3 +105,22 @@ $T:V\to W$ is linear transformation
   $R(T) \Leftrightarrow Col([T])$
 
 - $\dim(Ker(T)) + \dim(R(T)) = \dim(V)$
+
+
+---
+
+# chapter6 特征值与特征向量(英文教材chapter 5)
+- 特征值与特征向量
+- 相似对角化
+
+---
+
+## 特征值与特征向量
+
+---
+
+## 相似对角化
+
+---
+
+
