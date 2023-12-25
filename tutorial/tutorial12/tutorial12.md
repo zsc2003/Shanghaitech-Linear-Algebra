@@ -12,11 +12,19 @@ paginate: true
 
 # homework
 
+![](./img/C.png)
 
+---
 
+![](./img/E1.png)
 
+---
 
+![](./img/E2.png)
 
+---
+
+![](./img/bonus.png)
 
 ---
 
