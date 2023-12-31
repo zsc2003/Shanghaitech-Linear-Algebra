@@ -117,8 +117,8 @@ e.g. $A=\begin{bmatrix}1&1\\-2&4\end{bmatrix}$, find $A^n$
 2. 将特征向量组成$P$
 原因: $A=PDP^{-1}\Leftrightarrow AP=PD$
 
-$D$: 特征值
-$P$: 特征空间的基拼成(对应特征值)
+$D=diag(\lambda_1,\lambda_2,\cdots,\lambda_n)$
+$P=[\mathbf{x}_1,\mathbf{x}_2,\cdots,\mathbf{x}_n]$
 
 $P=\begin{bmatrix}1&1\\-2&4\end{bmatrix}$, $D=\begin{bmatrix}2&0\\0&3\end{bmatrix}$
 
@@ -182,4 +182,27 @@ $$\begin{bmatrix}a_{n+2}\\a_{n+1}\end{bmatrix} = \begin{bmatrix}1&1\\1&0\end{bma
 $\big|\begin{matrix*}1-\lambda&1\\1&-\lambda\end{matrix*}\big| = \lambda^2-\lambda-1=0$
 
 $$\begin{bmatrix}1&1\\1&0\end{bmatrix} = \begin{bmatrix}\frac{1+\sqrt{5}}{2}&\frac{1-\sqrt{5}}{2}\\\frac{1-\sqrt{5}}{2}&\frac{1+\sqrt{5}}{2}\end{bmatrix}\begin{bmatrix}\frac{1+\sqrt{5}}{2}&0\\0&\frac{1-\sqrt{5}}{2}\end{bmatrix}\begin{bmatrix}\frac{1}{\sqrt{5}}&\frac{1}{\sqrt{5}}\\-\frac{1}{\sqrt{5}}&\frac{1}{\sqrt{5}}\end{bmatrix}$$
+
+---
+
+# 内积，正交矩阵与二次型
+> chapter 6
+
+---
+
+# Orthogonal Matrices(正交矩阵)
+- $A^{\top}A=AA^{\top}=I_n$
+    $A^{-1}=A^{\top}$
+
+
+
+
+---
+
+# Orthogonal Diagonalization(正交对角化)
+
+
+
+
+
 
