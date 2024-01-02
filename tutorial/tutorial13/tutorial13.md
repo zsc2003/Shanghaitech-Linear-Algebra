@@ -264,3 +264,4 @@ $A$是**实对称**矩阵, 则$A$ 一定可以正交对角化(证明较复杂)
 # inner product space
 ![](./img/inner.png)
 - 与欧式空间类似, 只需把点乘替换成内积即可$<\cdot,\cdot>$
+
