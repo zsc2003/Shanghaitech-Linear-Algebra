@@ -197,7 +197,7 @@ $$\begin{bmatrix}1&1\\1&0\end{bmatrix} = \begin{bmatrix}\frac{1+\sqrt{5}}{2}&\fr
 $S = \{\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_n\}$
 - orthogonal set(正交集合)
     $\mathbf{u}_i^{\top}\mathbf{u}_j=0$ for $i\neq j$
-- orthogonal normal set(正交规范集合)
+- **orthogonal normal set / orthonormal**(正交规范集合)
     $S$ is orthogonal and $\|\mathbf{u}_i\|=1$ for $i=1,2,\cdots,n$
 
 - **不包含零向量的正交集合一定是线性无关的**
@@ -235,9 +235,32 @@ e.g. rotation matrix $R=\begin{bmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\t
 
 # Orthogonal Diagonalization(正交对角化)
 
-$A$是**实对称**矩阵
+- recall
+    若一个矩阵$A$可写作$D=P^{-1}AP$,即$A=PDP^{-1}$, 则称$A$可对角化(diagonalizable)
 
+- 若$P$为正交矩阵, 即$D=P^{\top}AP$, 则称$A$可正交对角化(orthogonal diagonalizable)
 
+---
+# 正交对角化
+$A$是**实对称**矩阵, 则$A$ 一定可以正交对角化(证明较复杂)
 
+- **对称矩阵**不同特征值对应的特征向量彼此正交(this slide P15)
 
+- 若将**对称矩阵**的特征向量的基**单位化**得到$P$,则$P$是正交矩阵
 
+---
+
+# 内积空间(inner product space)
+
+![](./img/defination.png)
+
+---
+
+# property
+![](./img/property.png)
+
+---
+
+# inner product space
+![](./img/inner.png)
+- 与欧式空间类似, 只需把点乘替换成内积即可$<\cdot,\cdot>$
