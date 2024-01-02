@@ -12,7 +12,16 @@ paginate: true
 
 # homework
 
+![](./img/eigenspace.png)
 
+---
+# homework
+
+C
+![](./img/C.png)
+
+$[J]_{B',B}=[2\ 0\ \dfrac{2}{3} 0]$
+$Ker(J) = ?$
 
 ---
 
@@ -64,11 +73,6 @@ The number of the eigenvectors of $A$ corresponding to $\lambda_i$ is same as th
 
 # property
 ![](./img/eigenvalue_property.png)
-
----
-
-# example
-$A$ is a $2\times 2$ matrix with eigenvalues $\lambda_1,\lambda_2\in\mathbb{Z}$, $B=A^{-2}-6A^{-1}$, the eigenvalues of $B$ are $-5$ and $7$, find $\lambda_1,\lambda_2$
 
 ---
 
@@ -190,17 +194,48 @@ $$\begin{bmatrix}1&1\\1&0\end{bmatrix} = \begin{bmatrix}\frac{1+\sqrt{5}}{2}&\fr
 
 ---
 
+$S = \{\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_n\}$
+- orthogonal set(正交集合)
+    $\mathbf{u}_i^{\top}\mathbf{u}_j=0$ for $i\neq j$
+- orthogonal normal set(正交规范集合)
+    $S$ is orthogonal and $\|\mathbf{u}_i\|=1$ for $i=1,2,\cdots,n$
+
+- **不包含零向量的正交集合一定是线性无关的**
+$\sum\limits_{i=1}^n c_i\mathbf{u}_i=\mathbf{0}\Rightarrow \mathbf{u}_i^{\top}\sum_{i=1}^n c_i\mathbf{u}_i=0\Rightarrow c_i=0$
+
+---
+
 # Orthogonal Matrices(正交矩阵)
 - $A^{\top}A=AA^{\top}=I_n$
     $A^{-1}=A^{\top}$
 
 
+e.g. rotation matrix $R=\begin{bmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{bmatrix}$
 
+---
+
+# 正交矩阵性质
+- $A$ 是正交矩阵 $\Leftrightarrow$ $A$ 的行/列向量组成的集合是正交规范集合
+
+- 正交矩阵的行/列向量是**标准正交基底**
+
+- $A$是正交矩阵 $\Leftrightarrow$ $A^{\top}$是正交矩阵
+
+- $A$是正交矩阵 $\Leftrightarrow \|A\mathbf{x}\|=\|\mathbf{x}\|$
+
+- $A$是正交矩阵 $\Leftrightarrow A\mathbf{x}\cdot A\mathbf{y}=\mathbf{x}\cdot\mathbf{y}$
+
+- $A$是正交矩阵 $\Leftrightarrow A^{-1}$也是正交矩阵
+
+- $A,B$是正交矩阵 $\Rightarrow AB$也是正交矩阵
+
+- $A$是正交矩阵 $\Rightarrow |A|=1$ or $|A|=-1$
 
 ---
 
 # Orthogonal Diagonalization(正交对角化)
 
+$A$是**实对称**矩阵
 
 
 
