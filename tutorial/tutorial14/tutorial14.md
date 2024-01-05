@@ -10,6 +10,17 @@ paginate: true
 
 ---
 
+# homework
+
+
+---
+
+# inner product space
+![](./img/inner.png)
+- 与欧式空间类似, 只需把点乘替换成内积即可$<\cdot,\cdot>$
+
+---
+
 # Projection Theorem for inner product space
 
 ---
@@ -24,12 +35,11 @@ paginate: true
 ---
 # least square approximation*
 - more intuitive:
-$\min\limits_{\mathbf{x}\in\mathbb{R}^n} \mathcal{L} =\big|\big|\mathbf{b}-A\mathbf{x}\big|\big|_2^2$
+$\min\limits_{\mathbf{x}\in\mathbb{R}^n} \mathcal{L} =\|\mathbf{b}-A\mathbf{x}\|_2^2$
 
-$\mathcal{L} =\big|\big|\mathbf{b}-A\mathbf{x}\big|\big|_2^2=(\mathbf{b}-A\mathbf{x})^T(\mathbf{b}-A\mathbf{x})=\mathbf{b}^T\mathbf{b}-\mathbf{b}^TA\mathbf{x}-\mathbf{x}^TA^T\mathbf{b}+\mathbf{x}^TA^TA\mathbf{x}$
+$\mathcal{L} =\|\mathbf{b}-A\mathbf{x}\|_2^2=(\mathbf{b}-A\mathbf{x})^T(\mathbf{b}-A\mathbf{x})=\mathbf{b}^T\mathbf{b}-\mathbf{b}^TA\mathbf{x}-\mathbf{x}^TA^T\mathbf{b}+\mathbf{x}^TA^TA\mathbf{x}$
 $\dfrac{\partial\mathcal{L}}{\partial\mathbf{x}}=-2A^T\mathbf{b}+2A^TA\mathbf{x}=0$
 $\Rightarrow A^TA\mathbf{x}=A^T\mathbf{b}$
-
 
 ---
 
